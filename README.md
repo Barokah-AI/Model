@@ -1,2 +1,2 @@
 # Model
-Model nya barokah
+Model nya barokah 🚀
