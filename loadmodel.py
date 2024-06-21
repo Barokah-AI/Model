@@ -9,8 +9,8 @@ df['label'] = df['answer'].astype('category').cat.codes
 label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
 
-tokenizer = BertTokenizer.from_pretrained("./qa_model4")
-model = BertForSequenceClassification.from_pretrained("./qa_model4")
+tokenizer = BertTokenizer.from_pretrained("./results")
+model = BertForSequenceClassification.from_pretrained("./results")
 
 
 def get_answer(question):
