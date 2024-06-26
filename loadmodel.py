@@ -17,7 +17,10 @@ def get_answer(question):
     inputs = tokenizer(question, return_tensors="pt")
     outputs = model(**inputs)
     answer = torch.argmax(outputs.logits).item()
+    print(outputs.logits)
+    print(answer)
     return label_dict[answer]
+    # return outputs
 
 # Test the model
 while True:
@@ -27,3 +30,5 @@ while True:
         break
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
+
+# print(label_dict)
