@@ -5,6 +5,23 @@ from sklearn.model_selection import train_test_split
 from datasets import Dataset
 import evaluate
 import numpy as np
+import os
+import re
+
+
+models_directory = "./models"
+name_models = "model v"
+def get_next_model_version(models_directory):
+    contents = os.listdir(models_directory)
+    max_version = 0
+    for item in contents:
+        match = re.search(r'v(\d+)', item)
+        if match:
+            number = int(match.group(1))
+            max_version = max(max_version, number)
+    return name_models + str(max_version + 1)
+
+
 
 # Verify CUDA availability and device
 print("CUDA available:", torch.cuda.is_available())
@@ -103,5 +120,5 @@ eval_results = trainer.evaluate()
 print(f"Evaluation results: {eval_results}")
 
 # Save model
-model.save_pretrained("./results")
-tokenizer.save_pretrained("./results")
+model.save_pretrained("./models/" + get_next_model_version(models_directory))
+tokenizer.save_pretrained("./models/" + get_next_model_version(models_directory))
