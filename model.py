@@ -69,15 +69,15 @@ for dataset in [train_dataset, eval_dataset]:
 # Training arguments
 training_args = TrainingArguments(
     output_dir='./results',
-    num_train_epochs=5,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=16,
-    warmup_steps=300,
+    num_train_epochs=100,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=32,
+    warmup_steps=600,
     weight_decay=0.01,
     logging_dir='./logs',
     logging_steps=100,
-    evaluation_strategy="epoch",
-    learning_rate=5e-5,
+    evaluation_strategy="steps",
+    learning_rate=3e-5,
     save_total_limit=5,
     disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
     load_best_model_at_end=True,
