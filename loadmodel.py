@@ -9,15 +9,15 @@ df['label'] = df['answer'].astype('category').cat.codes
 label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
 
-tokenizer = BertTokenizer.from_pretrained("./results")
-model = BertForSequenceClassification.from_pretrained("./results")
+tokenizer = BertTokenizer.from_pretrained("./models/model v4")
+model = BertForSequenceClassification.from_pretrained("./models/model v4")
 
 
 def get_answer(question):
     inputs = tokenizer(question, return_tensors="pt")
     outputs = model(**inputs)
     answer = torch.argmax(outputs.logits).item()
-    print(outputs.logits)
+    print(max(outputs.logits))
     print(answer)
     return label_dict[answer]
     # return outputs
