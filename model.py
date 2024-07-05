@@ -119,5 +119,6 @@ eval_results = trainer.evaluate()
 print(f"Evaluation results: {eval_results}")
 
 # Save model
-model.save_pretrained("./models/" + get_next_model_version(models_directory))
-tokenizer.save_pretrained("./models/" + get_next_model_version(models_directory))
+next_version = get_next_model_version(models_directory)
+model.save_pretrained("./models/" + next_version )
+tokenizer.save_pretrained("./models/" + next_version )
