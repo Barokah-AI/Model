@@ -69,10 +69,10 @@ for dataset in [train_dataset, eval_dataset]:
 # Training arguments
 training_args = TrainingArguments(
     output_dir='./results',
-    num_train_epochs=5,
-    per_device_train_batch_size=4,
-    per_device_eval_batch_size=8,
-    warmup_steps=100,
+    num_train_epochs=20,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=32,
+    warmup_steps=200,
     weight_decay=0.01,
     logging_dir='./logs',
     no_cuda=not torch.cuda.is_available()  # Ini akan menggunakan GPU jika tersedia
