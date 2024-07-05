@@ -7,8 +7,10 @@ import evaluate
 import numpy as np
 import os
 import re
+import tqdm as tqdm
 
 
+# ===========================
 models_directory = "./models"
 name_models = "model v"
 def get_next_model_version(models_directory):
@@ -32,7 +34,7 @@ else:
     print("CUDA not available. Check your CUDA installation and NVIDIA drivers.")
 
 # Load dataset
-df = pd.read_csv("dataset/questions.csv", sep="|")
+df = pd.read_csv("dataset/13002-14001.csv", sep="|")
 
 # Encode labels
 df['label'] = df['answer'].astype('category').cat.codes
@@ -66,7 +68,7 @@ eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'l
 training_args = TrainingArguments(
     output_dir='./results',
     num_train_epochs=5,
-    per_device_train_batch_size=8,
+    per_device_train_batch_size=4,
     per_device_eval_batch_size=8,
     warmup_steps=100,
     weight_decay=0.01,

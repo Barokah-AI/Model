@@ -2,7 +2,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 import pandas as pd
 
-df = pd.read_csv("dataset/questions.csv", sep="|")
+df = pd.read_csv("dataset/13002-14001.csv", sep="|")
 
 # Encode labels
 df['label'] = df['answer'].astype('category').cat.codes
