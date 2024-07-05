@@ -69,12 +69,20 @@ for dataset in [train_dataset, eval_dataset]:
 # Training arguments
 training_args = TrainingArguments(
     output_dir='./results',
-    num_train_epochs=20,
-    per_device_train_batch_size=16,
-    per_device_eval_batch_size=32,
-    warmup_steps=200,
+    num_train_epochs=5,
+    per_device_train_batch_size=8,
+    per_device_eval_batch_size=16,
+    warmup_steps=300,
     weight_decay=0.01,
     logging_dir='./logs',
+    logging_steps=100,
+    evaluation_strategy="epoch",
+    learning_rate=5e-5,
+    save_total_limit=5,
+    disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
+    load_best_model_at_end=True,
+    metric_for_best_model="eval_accuracy",
+    greater_is_better=True,
     no_cuda=not torch.cuda.is_available()  # Ini akan menggunakan GPU jika tersedia
 )
 
