@@ -1,18 +1,16 @@
-from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
 import pandas as pd
-import torch
 from sklearn.model_selection import train_test_split
 from datasets import Dataset
-import evaluate
-import numpy as np
+from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
+import torch
 import os
 import re
-import tqdm as tqdm
+import evaluate
+import numpy as np
 
-
-# ===========================
 models_directory = "./models"
 name_models = "model v"
+
 def get_next_model_version(models_directory):
     contents = os.listdir(models_directory)
     max_version = 0
@@ -22,8 +20,6 @@ def get_next_model_version(models_directory):
             number = int(match.group(1))
             max_version = max(max_version, number)
     return name_models + str(max_version + 1)
-
-
 
 # Verify CUDA availability and device
 print("CUDA available:", torch.cuda.is_available())
@@ -64,6 +60,12 @@ eval_dataset = eval_dataset.map(preprocess_function, batched=True)
 train_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
 eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
 
+# Validate labels
+num_labels = len(df['label'].unique())
+for dataset in [train_dataset, eval_dataset]:
+    for example in dataset:
+        assert 0 <= example['label'] < num_labels, f"Invalid label {example['label']} found!"
+
 # Training arguments
 training_args = TrainingArguments(
     output_dir='./results',
@@ -73,10 +75,8 @@ training_args = TrainingArguments(
     warmup_steps=100,
     weight_decay=0.01,
     logging_dir='./logs',
-    # Menambahkan parameter untuk penggunaan GPU
     no_cuda=not torch.cuda.is_available()  # Ini akan menggunakan GPU jika tersedia
 )
-
 
 # Explicitly move model to GPU
 if torch.cuda.is_available():
@@ -90,7 +90,6 @@ metric = evaluate.load("accuracy", trust_remote_code=True)
 
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
-    # Convert logits to tensor if it is a numpy array
     if isinstance(logits, np.ndarray):
         logits = torch.tensor(logits)
     if isinstance(labels, np.ndarray):
@@ -100,9 +99,9 @@ def compute_metrics(eval_pred):
 
 # Trainer
 trainer = Trainer(
-    model=model,                         
-    args=training_args,                  
-    train_dataset=train_dataset,         
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
     eval_dataset=eval_dataset,
     compute_metrics=compute_metrics
 )
@@ -110,10 +109,8 @@ trainer = Trainer(
 # Print device to verify
 print("Training on device:", trainer.args.device)
 
-
 # Train model
 trainer.train()
-
 
 # Evaluate model
 eval_results = trainer.evaluate()
