@@ -30,7 +30,7 @@ else:
     print("CUDA not available. Check your CUDA installation and NVIDIA drivers.")
 
 # Load dataset
-df = pd.read_csv("dataset/13002-14001.csv", sep="|")
+df = pd.read_csv("dataset/test1.csv", sep="|")
 
 # Encode labels
 df['label'] = df['answer'].astype('category').cat.codes
@@ -69,10 +69,10 @@ for dataset in [train_dataset, eval_dataset]:
 # Training arguments
 training_args = TrainingArguments(
     output_dir='./results',
-    num_train_epochs=100,
-    per_device_train_batch_size=16,
-    per_device_eval_batch_size=32,
-    warmup_steps=600,
+    num_train_epochs=50,
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=64,
+    warmup_steps=100,
     weight_decay=0.01,
     logging_dir='./logs',
     logging_steps=100,
