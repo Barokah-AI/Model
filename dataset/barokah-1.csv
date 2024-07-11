@@ -7599,3 +7599,103 @@ Apa itu Mass Extinction?|Mass Extinction adalah peristiwa di mana sebagian besar
 Apa itu Asteroid Impact?|Asteroid Impact adalah peristiwa di mana sebuah asteroid menabrak Bumi, yang bisa menyebabkan kehancuran luas.
 Apa itu Pandemic?|Pandemic adalah wabah penyakit yang menyebar luas di seluruh dunia dan dapat menyebabkan kematian massal dan gangguan sosial.
 Apa itu Supervolcano?|Supervolcano adalah gunung berapi yang memiliki potensi untuk meletus dalam skala yang sangat besar, menyebabkan kerusakan global dan perubahan iklim.
+Apa itu Alien Invasion?|Alien Invasion adalah skenario fiksi di mana makhluk asing menyerang Bumi, menyebabkan kehancuran dan konflik global.
+Apa itu Zombie Outbreak?|Zombie Outbreak adalah skenario fiksi di mana orang-orang yang mati hidup kembali sebagai zombie dan menyerang orang hidup.
+Apa itu hacking?|Hacking adalah tindakan memperoleh akses tidak sah ke sistem komputer atau jaringan untuk mencuri, mengubah, atau merusak data.
+Mengapa hacking menjadi ancaman besar?|Hacking dapat menyebabkan kerugian finansial, pencurian identitas, gangguan layanan, dan ancaman terhadap keamanan nasional.
+Apa jenis hacking yang paling umum?|Jenis hacking yang paling umum termasuk phishing, malware, ransomware, dan serangan DDoS.
+Bagaimana hacker dapat mencuri data pribadi?|Hacker dapat mencuri data pribadi melalui serangan phishing, malware, atau eksploitasi kelemahan keamanan.
+Apa itu phishing?|Phishing adalah teknik penipuan di mana hacker menyamar sebagai entitas tepercaya untuk mencuri informasi sensitif seperti kata sandi dan nomor kartu kredit.
+Mengapa serangan ransomware meningkat?|Serangan ransomware meningkat karena teknik yang semakin canggih dan potensi keuntungan finansial bagi hacker.
+Apa itu serangan DDoS?|Serangan DDoS (Distributed Denial of Service) adalah serangan di mana hacker membanjiri server dengan lalu lintas untuk membuatnya tidak dapat diakses.
+Bagaimana serangan malware bekerja?|Malware adalah perangkat lunak berbahaya yang dapat mencuri data, merusak sistem, atau memberikan akses tidak sah kepada hacker.
+Apa itu zero-day exploit?|Zero-day exploit adalah kerentanan keamanan yang belum diketahui oleh vendor perangkat lunak, yang dapat dieksploitasi oleh hacker.
+Bagaimana hacking mempengaruhi perusahaan?|Hacking dapat merusak reputasi perusahaan, menyebabkan kerugian finansial, dan mengakibatkan hilangnya data sensitif.
+Apa yang dimaksud dengan ethical hacking?|Ethical hacking adalah praktik di mana profesional keamanan melakukan pengujian penetrasi untuk mengidentifikasi dan memperbaiki kelemahan keamanan.
+Mengapa perusahaan perlu tes penetrasi?|Tes penetrasi membantu perusahaan mengidentifikasi dan memperbaiki kerentanan sebelum dapat dieksploitasi oleh hacker.
+Apa itu brute force attack?|Brute force attack adalah metode hacking di mana hacker mencoba semua kombinasi kemungkinan kata sandi hingga menemukan yang benar.
+Bagaimana hacker menyusup ke jaringan?|Hacker dapat menyusup ke jaringan melalui eksploitasi kerentanan, penggunaan kredensial curian, atau serangan sosial.
+Apa itu social engineering?|Social engineering adalah teknik manipulasi psikologis yang digunakan hacker untuk mendapatkan informasi atau akses tidak sah.
+Mengapa password kuat penting?|Password kuat penting untuk melindungi akun dari serangan brute force dan menjaga keamanan data pribadi.
+Apa itu firewall?|Firewall adalah sistem keamanan jaringan yang memantau dan mengontrol lalu lintas masuk dan keluar berdasarkan aturan keamanan yang ditetapkan.
+Bagaimana enkripsi melindungi data?|Enkripsi mengubah data menjadi format yang tidak dapat dibaca tanpa kunci dekripsi, melindungi informasi dari akses tidak sah.
+Apa itu serangan man-in-the-middle?|Serangan man-in-the-middle adalah ketika hacker mencegat komunikasi antara dua pihak untuk mencuri atau mengubah informasi.
+Mengapa penting untuk memperbarui perangkat lunak?|Memperbarui perangkat lunak penting untuk menutup kerentanan keamanan yang dapat dieksploitasi oleh hacker.
+Apa itu botnet?|Botnet adalah jaringan komputer yang terinfeksi malware dan dikendalikan oleh hacker untuk melakukan serangan skala besar.
+Bagaimana hacker menggunakan IoT?|Hacker dapat mengeksploitasi kelemahan keamanan pada perangkat IoT untuk mendapatkan akses ke jaringan dan data.
+Apa itu backdoor?|Backdoor adalah metode yang memungkinkan akses tidak sah ke sistem atau aplikasi, seringkali dipasang oleh malware.
+Bagaimana hacker mengeksploitasi kerentanan perangkat lunak?|Hacker mengeksploitasi kerentanan perangkat lunak dengan menggunakan kode khusus untuk mengambil alih sistem atau mencuri data.
+Mengapa penting untuk menggunakan autentikasi dua faktor?|Autentikasi dua faktor menambah lapisan keamanan tambahan dengan memerlukan dua bentuk verifikasi untuk mengakses akun.
+Apa itu spear phishing?|Spear phishing adalah bentuk phishing yang ditargetkan secara spesifik pada individu atau organisasi tertentu untuk mencuri data sensitif.
+Bagaimana hacker merusak website?|Hacker dapat merusak website dengan menyisipkan kode berbahaya, mencuri data pengguna, atau mengubah konten.
+Apa itu cryptojacking?|Cryptojacking adalah penggunaan tidak sah dari komputer seseorang untuk menambang cryptocurrency tanpa sepengetahuan mereka.
+Bagaimana hacker menggunakan ransomware?|Hacker mengenkripsi data korban dan menuntut tebusan untuk kunci dekripsi agar data dapat diakses kembali.
+Apa itu SQL injection?|SQL injection adalah serangan di mana hacker menyisipkan kode SQL berbahaya ke dalam permintaan database untuk mencuri atau merusak data.
+Mengapa penting untuk melatih karyawan tentang keamanan siber?|Melatih karyawan tentang keamanan siber membantu mencegah serangan sosial dan kebocoran data yang tidak disengaja.
+Apa itu honeypot?|Honeypot adalah sistem yang dirancang untuk menarik dan memantau aktivitas hacker untuk mempelajari teknik serangan mereka.
+Bagaimana hacker mengeksploitasi Wi-Fi publik?|Hacker dapat menyusup ke jaringan Wi-Fi publik yang tidak aman untuk mencuri data pengguna atau meluncurkan serangan.
+Apa itu keylogger?|Keylogger adalah perangkat lunak atau perangkat keras yang merekam setiap penekanan tombol yang dilakukan oleh pengguna untuk mencuri informasi.
+Bagaimana hacker menyusup ke email?|Hacker dapat menyusup ke email melalui serangan phishing, malware, atau eksploitasi kerentanan pada penyedia layanan email.
+Apa itu ransomware-as-a-service?|Ransomware-as-a-service adalah model bisnis di mana hacker menyewakan ransomware kepada pihak ketiga untuk melancarkan serangan.
+Mengapa penting untuk mencadangkan data secara teratur?|Mencadangkan data secara teratur melindungi informasi penting dari kehilangan akibat serangan ransomware atau kerusakan sistem.
+Apa itu spoofing?|Spoofing adalah teknik di mana hacker memalsukan identitas atau alamat pengirim untuk menyusup ke sistem atau mencuri informasi.
+Bagaimana hacker memanfaatkan cloud computing?|Hacker dapat mengeksploitasi kerentanan dalam layanan cloud untuk mencuri data atau meluncurkan serangan skala besar.
+Apa itu phishing-as-a-service?|Phishing-as-a-service adalah model di mana hacker menjual alat dan layanan phishing kepada pihak ketiga untuk meluncurkan serangan.
+Mengapa penting untuk memantau log aktivitas?|Memantau log aktivitas membantu mendeteksi aktivitas mencurigakan dan merespons serangan keamanan dengan cepat.
+Bagaimana hacker menggunakan exploit kits?|Exploit kits adalah paket alat yang digunakan oleh hacker untuk mengeksploitasi kerentanan dan menyebarkan malware.
+Apa itu denial-of-service attack?|Denial-of-service attack adalah serangan di mana hacker membuat sumber daya atau layanan tidak tersedia bagi pengguna yang sah.
+Mengapa penting untuk mengamankan perangkat seluler?|Mengamankan perangkat seluler penting untuk melindungi data pribadi dan mencegah akses tidak sah.
+Apa itu insider threat?|Insider threat adalah ancaman keamanan yang berasal dari dalam organisasi, seperti karyawan yang menyalahgunakan akses mereka.
+Bagaimana hacker mencuri identitas?|Hacker mencuri identitas dengan mengakses informasi pribadi, seperti nomor identifikasi atau detail keuangan, dan menggunakannya untuk tujuan penipuan.
+Apa itu ransomware encryption?|Ransomware encryption adalah proses di mana ransomware mengenkripsi data korban, membuatnya tidak dapat diakses tanpa kunci dekripsi.
+Mengapa penting untuk mengamankan jaringan rumah?|Mengamankan jaringan rumah penting untuk melindungi perangkat pribadi dan data dari serangan hacker.
+Apa itu fileless malware?|Fileless malware adalah jenis malware yang tidak meninggalkan jejak file pada sistem yang terinfeksi, membuatnya sulit dideteksi.
+Bagaimana hacker menggunakan social media?|Hacker menggunakan social media untuk mencuri informasi pribadi, menyebarkan malware, atau melakukan serangan phishing.
+Apa itu bahan pangan?|Bahan pangan adalah segala jenis bahan yang bisa dikonsumsi oleh manusia untuk memperoleh energi dan nutrisi.
+Mengapa beras menjadi makanan pokok di banyak negara?|Beras kaya akan karbohidrat dan menyediakan energi yang dibutuhkan oleh tubuh, serta dapat tumbuh di berbagai kondisi iklim.
+Dimana gandum banyak ditanam?|Gandum banyak ditanam di negara-negara dengan iklim sedang, seperti Amerika Serikat, Kanada, dan negara-negara di Eropa.
+Bagaimana cara memasak jagung?|Jagung bisa dimasak dengan direbus, dipanggang, atau dijadikan popcorn.
+Kapan kacang-kacangan biasanya dipanen?|Kacang-kacangan biasanya dipanen pada akhir musim panas atau awal musim gugur, tergantung jenis tanamannya.
+Siapa yang pertama kali membudidayakan sayuran?|Sayuran telah dibudidayakan oleh manusia sejak zaman prasejarah di berbagai belahan dunia.
+Mengapa buah-buahan penting untuk kesehatan?|Buah-buahan kaya akan vitamin, mineral, dan serat yang penting untuk menjaga kesehatan tubuh.
+Apa manfaat daging sapi?|Daging sapi kaya akan protein, zat besi, dan vitamin B12 yang penting untuk kesehatan otot dan darah.
+Bagaimana cara memasak daging ayam agar tetap lezat?|Daging ayam bisa dimasak dengan berbagai cara seperti dipanggang, digoreng, atau direbus, dan sering dibumbui dengan rempah-rempah untuk menambah rasa.
+Dimana ikan banyak dikonsumsi?|Ikan banyak dikonsumsi di negara-negara pesisir dan di seluruh dunia sebagai sumber protein dan omega-3.
+Apa manfaat mengonsumsi telur?|Telur kaya akan protein, vitamin D, dan kolin yang penting untuk kesehatan otak dan tulang.
+Bagaimana cara membuat susu menjadi yogurt?|Susu dijadikan yogurt dengan menambahkan kultur bakteri dan membiarkannya berfermentasi hingga mengental.
+Mengapa keju populer di seluruh dunia?|Keju populer karena rasanya yang enak, teksturnya yang bervariasi, dan dapat digunakan dalam berbagai masakan.
+Kapan minyak sayur mulai digunakan?|Minyak sayur telah digunakan sejak ribuan tahun lalu, terutama di peradaban kuno seperti Mesir dan Mesopotamia.
+Dimana tepung sering digunakan?|Tepung sering digunakan dalam pembuatan roti, kue, pasta, dan berbagai produk makanan lainnya di seluruh dunia.
+Mengapa gula sering digunakan dalam makanan?|Gula digunakan sebagai pemanis alami dalam berbagai makanan dan minuman, serta berperan dalam proses pengawetan.
+Apa perbedaan antara mentega dan margarin?|Mentega berasal dari lemak hewani (susu), sementara margarin berasal dari minyak nabati yang dihidrogenasi.
+Bagaimana nasi disiapkan sebelum dimasak?|Nasi biasanya dicuci untuk menghilangkan kotoran dan pati berlebih sebelum dimasak dengan air mendidih.
+Dimana roti pertama kali dibuat?|Roti pertama kali dibuat di Mesopotamia dan Mesir Kuno lebih dari 5.000 tahun yang lalu.
+Apa yang membuat pasta berbeda dari makanan lainnya?|Pasta dibuat dari adonan tepung gandum dan air, lalu dibentuk menjadi berbagai bentuk dan direbus sebelum disajikan.
+Mengapa kentang menjadi makanan pokok di banyak negara?|Kentang kaya akan karbohidrat dan dapat tumbuh di berbagai kondisi tanah dan iklim, membuatnya menjadi sumber makanan yang penting.
+Bagaimana wortel baik untuk kesehatan?|Wortel kaya akan vitamin A yang penting untuk kesehatan mata dan sistem kekebalan tubuh.
+Dimana tomat sering digunakan?|Tomat sering digunakan dalam salad, saus, sup, dan berbagai hidangan lainnya di seluruh dunia.
+Mengapa bayam sering disebut sebagai superfood?|Bayam kaya akan zat besi, kalsium, vitamin K, dan antioksidan, menjadikannya sangat bergizi.
+Apa manfaat mengonsumsi brokoli?|Brokoli kaya akan vitamin C, vitamin K, serat, dan senyawa antioksidan yang dapat mendukung kesehatan jantung dan sistem kekebalan tubuh.
+Bagaimana apel dapat meningkatkan kesehatan?|Apel mengandung serat, vitamin C, dan antioksidan yang baik untuk kesehatan pencernaan dan kekebalan tubuh.
+Dimana pisang banyak ditanam?|Pisang banyak ditanam di daerah tropis seperti Amerika Latin, Asia Tenggara, dan Afrika.
+Mengapa jeruk penting untuk dikonsumsi?|Jeruk kaya akan vitamin C yang penting untuk kesehatan kulit, sistem kekebalan tubuh, dan penyerapan zat besi.
+Bagaimana anggur bisa diolah?|Anggur bisa dimakan segar, dijadikan jus, anggur merah/putih, atau dikeringkan menjadi kismis.
+Kapan stroberi biasanya dipanen?|Stroberi biasanya dipanen pada akhir musim semi hingga awal musim panas.
+Mengapa blueberry dianggap baik untuk kesehatan?|Blueberry kaya akan antioksidan, vitamin C, dan serat yang baik untuk kesehatan jantung dan otak.
+Bagaimana kacang tanah dapat digunakan dalam masakan?|Kacang tanah bisa dimakan mentah, dipanggang, dibuat menjadi selai kacang, atau digunakan dalam berbagai hidangan seperti gado-gado dan satay.
+Dimana almond banyak diproduksi?|Almond banyak diproduksi di California, Amerika Serikat, yang merupakan penghasil almond terbesar di dunia.
+Apa manfaat mengonsumsi kacang kedelai?|Kacang kedelai kaya akan protein, isoflavon, dan serat yang baik untuk kesehatan jantung dan pencernaan.
+Bagaimana quinoa dimasak?|Quinoa dimasak dengan cara direbus seperti nasi, biasanya dalam air atau kaldu hingga biji-bijiannya empuk.
+Mengapa chia seed populer dalam makanan sehat?|Chia seed kaya akan omega-3, serat, protein, dan berbagai nutrisi lainnya, serta dapat menyerap air hingga membentuk gel yang baik untuk pencernaan.
+Dimana flaxseed sering digunakan?|Flaxseed sering digunakan dalam roti, sereal, smoothie, dan makanan panggang lainnya sebagai sumber serat dan omega-3.
+Bagaimana biji bunga matahari bisa dikonsumsi?|Biji bunga matahari bisa dimakan sebagai camilan, ditambahkan ke salad, atau digunakan sebagai bahan dalam roti dan granola.
+Apa manfaat mengonsumsi kelapa?|Kelapa mengandung lemak sehat, serat, dan berbagai vitamin dan mineral, serta bisa digunakan dalam berbagai bentuk seperti minyak, santan, dan air kelapa.
+Kapan daging kambing biasanya dimasak?|Daging kambing sering dimasak dalam hidangan khusus saat perayaan atau acara keagamaan di berbagai budaya.
+Mengapa udang menjadi bahan pangan populer?|Udang kaya akan protein, rendah lemak, dan bisa diolah dengan berbagai cara, membuatnya menjadi bahan pangan yang populer.
+Bagaimana kerang dimasak?|Kerang bisa dimasak dengan cara direbus, dikukus, dipanggang, atau dijadikan bagian dari hidangan seperti sup dan pasta.
+Dimana kacang hijau sering digunakan?|Kacang hijau sering digunakan dalam sup, salad, dan hidangan penutup seperti bubur kacang hijau.
+Apa manfaat mengonsumsi paprika?|Paprika kaya akan vitamin C, vitamin A, dan antioksidan yang baik untuk kesehatan mata dan sistem kekebalan tubuh.
+Bagaimana zucchini bisa dimasak?|Zucchini bisa dipanggang, ditumis, direbus, atau digunakan sebagai bahan dalam pasta dan hidangan panggang lainnya.
+Mengapa labu populer saat musim gugur?|Labu digunakan dalam berbagai hidangan musim gugur seperti pai labu, sup, dan dekorasi Halloween.
+Dimana daging babi banyak dikonsumsi?|Daging babi banyak dikonsumsi di negara-negara seperti China, Amerika Serikat, dan Jerman sebagai bagian dari berbagai masakan.
+Mengapa daging sapi sering dikonsumsi?|Daging sapi kaya akan protein, zat besi, dan vitamin B12 yang penting untuk kesehatan otot dan darah.
