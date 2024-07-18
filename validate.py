@@ -15,3 +15,10 @@ if not invalid_labels.empty:
     print(invalid_labels)
 else:
     print("No invalid labels found.")
+
+invalid_labels = df[df['Label'] == -1]
+if not invalid_labels.empty:
+    print("Invalid labels found:")
+    print(invalid_labels)
+else:
+    print("No invalid labels found.")
