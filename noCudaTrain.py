@@ -38,3 +38,9 @@ eval_dataset = Dataset.from_pandas(eval_df)
 # Load tokenizer and model
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=len(df['label'].unique()))
+
+# Tokenize dataset and include labels
+def preprocess_function(examples):
+    inputs = tokenizer(examples['question'], truncation=True, padding=True)
+    inputs['label'] = examples['label']
+    return inputs
