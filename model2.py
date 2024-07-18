@@ -19,8 +19,8 @@ class QADataset(torch.utils.data.Dataset):
         self.tokenizer = tokenizer
         self.max_length = max_length
 
-    # def __len__(self):
-    #     return len(self.inputs)
+    def __len__(self):
+        return len(self.inputs)
 
     def __getitem__(self, idx):
         input_encodings = self.tokenizer(self.inputs[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
