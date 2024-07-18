@@ -26,9 +26,9 @@ def get_answer(question):
 
 # Test the model
 while True:
-    user_input = input("Tanyakan Sesuatu atau Ketik 'Exit' Untuk Keluar: ")
+    user_input = input("Tanyakan sesuatu atau ketik 'exit' untuk keluar: ")
     if user_input.lower() == 'exit':
-        print("Terimakasih dan Sampai jumpa!")
+        print("Terima kasih dan Sampai jumpa!")
         break
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
