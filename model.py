@@ -118,10 +118,10 @@ trainer = Trainer(
 )
 
 # Print device to verify
-# print("Training on device:", trainer.args.device)
+print("Training on device:", trainer.args.device)
 
 # Train model
-# trainer.train()
+trainer.train()
 
 # Evaluate model
 eval_results = trainer.evaluate()
