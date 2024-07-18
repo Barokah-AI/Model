@@ -32,13 +32,7 @@ else:
 # Load dataset
 df = pd.read_csv("dataset/13002-14001.csv", sep="|")
 
-# Encode labels
-df['label'] = df['answer'].astype('category').cat.codes
-label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
-# Encode labels
-df['label'] = df['answer'].astype('category').cat.codes
-label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
 # Split dataset
 train_df, eval_df = train_test_split(df, test_size=0.2)
