@@ -60,3 +60,7 @@ trainer.train()
 # Save the model
 model.save_pretrained('t5_qa_model')
 tokenizer.save_pretrained('t5_qa_model')
+
+# Save the model
+model.save_pretrained('t5_qa_model1')
+tokenizer.save_pretrained('t5_qa_model1')
