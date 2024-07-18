@@ -23,3 +23,7 @@ def get_next_model_version(models_directory):
 
 # Load dataset
 df = pd.read_csv("dataset/barokah-1.csv", sep="|")
+
+# Encode labels
+df['label'] = df['answer'].astype('category').cat.codes
+label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
