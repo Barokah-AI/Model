@@ -1,7 +1,7 @@
 import pandas as pd
 # Load dataset
 # Load dataset
-df = pd.read_csv("dataset/13002-14001.csv", sep="|")
+df = pd.read_csv("dataset/barokah.csv", sep="|")
 
 # Encode labels
 df['label'] = df['answer'].astype('category').cat.codes

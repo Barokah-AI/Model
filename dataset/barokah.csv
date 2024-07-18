@@ -238,7 +238,7 @@ what is Pressure|Pressure is measured in units of Pascals (Pa).
 Bagaimana cara menambahkan custom validasi menggunakan Constraint Validation API?|Custom validasi dapat ditambahkan menggunakan Constraint Validation API dengan menentukan properti setCustomValidity() pada elemen input dan menangani event invalid.
 Apakah Vercel menyediakan integrasi dengan layanan manajemen email?|Ya, Vercel menyediakan integrasi dengan layanan manajemen email seperti SendGrid dan Mailgun. Anda dapat mengintegrasikan proyek Vercel Anda dengan layanan manajemen email favorit Anda untuk mengirim email dari aplikasi Anda.
 males|sama aku juga males
-lama i|terserah aku lah
+lama ih|terserah aku lah
 cara menyayanigi ibu|1. Menjaga kesehatan ibu dengan baik.\n2. Memberikan dukungan dan kasih sayang kepada ibu.\n3. Memberikan bantuan dan bimbingan kepada ibu.\n4. Menghargai dan menghormati ibu.\n5. Membantu ibu dalam menyelesaikan tugas-tugas rumah tangga.\n6. Memberikan ibu waktu untuk beristirahat dan bersantai.\n7. Membantu ibu dalam menyelesaikan masalah-masalah yang dihadapinya.\n8. Membantu ibu dalam menjalankan kegiatan-kegiatan sehari-hari.\n9. Memberikan ibu kesempatan untuk mengekspresikan pendapatnya.\n10. Membantu ibu dalam mencapai tujuannya.
 Bagaimana cara membuat alert Bootstrap yang SEO-friendly?|Anda dapat menggunakan alt text untuk gambar, heading yang relevan, dan meta description yang sesuai untuk membuat alert Bootstrap yang SEO-friendly.
 Bagaimana cara mengelola koneksi database di Vercel?|Anda dapat mengelola koneksi database di Vercel melalui pengaturan proyek. Anda dapat menentukan parameter koneksi database seperti host, port, nama pengguna, dan kata sandi.
@@ -294,7 +294,6 @@ apa itu gjqa|GJQA adalah singkatan dari Gaji, Jam Kerja, QA (Quality Assurance) 
 Apakah GitHub Pages mendukung penggunaan SVG?|Ya, GitHub Pages mendukung penggunaan SVG (Scalable Vector Graphics) untuk menampilkan grafik vektor di situs web Anda.
 sistem absensi pabrik|Input absensi pabrik dapat dilakukan dengan menggunakan berbagai macam teknologi, seperti sistem absensi berbasis kartu, sistem absensi berbasis sidik jari, sistem absensi berbasis wajah, sistem absensi berbasis QR Code, dan sistem absensi berbasis aplikasi. Teknologi ini memungkinkan pengelola untuk mengontrol dan mencatat kehadiran peserta dengan mudah dan cepat.
 Apakah normalisasi data mempengaruhi interpretasi koefisien dalam regresi linear?|Ya, normalisasi data dapat mempengaruhi interpretasi koefisien dalam regresi linear karena normalisasi dapat membuat nilai-nilai fitur berada dalam rentang yang seragam, sehingga koefisien memiliki interpretasi yang lebih langsung.
-kemana iii|Ia mungkin pergi ke toko, restoran, bioskop, atau tempat lain yang ia sukai.
 Bagaimana cara memilih metode pengembangan perangkat lunak yang tepat|Metode pengembangan perangkat lunak yang tepat dipilih berdasarkan kebutuhan proyek, sumber daya yang tersedia, kompleksitas sistem, dan preferensi tim pengembangan.
 Apakah GitHub Pages mendukung penggunaan SSL khusus?|Ya, GitHub Pages mendukung penggunaan SSL khusus dengan menyediakan opsi untuk meng-upload sertifikat SSL khusus Anda sendiri.
 Apa yang dimaksud dengan casting tipe data dalam Go?|Casting tipe data adalah proses mengubah nilai dari satu tipe data ke tipe data lain yang sesuai.
@@ -600,16 +599,16 @@ Apa yang perlu dipertimbangkan saat memilih tempat tinggal?|Faktor seperti harga
 Bagaimana cara mengembangkan kebiasaan membaca yang baik?|Tetapkan waktu harian untuk membaca, pilih buku atau artikel yang sesuai minat Anda, dan buat lingkungan yang mendukung.
 Apa yang dimaksud dengan keberlanjutan lingkungan?|Keberlanjutan lingkungan adalah praktik menjaga sumber daya alam untuk generasi mendatang dengan cara yang bertanggung jawab.
 Apa nama samudra terbesar di dunia?|Samudra Pasifik.
-Apa nama kimia untuk air?|H₂O.
+Apa nama kimia untuk air?|H2O.
 Apa nama hewan tercepat di darat?|Cheetah.
-"Siapa penyanyi lagu ""Shape of You""?|Ed Sheeran."
+Siapa penyanyi lagu Shape of You?|Ed Sheeran.
 Apa nama sistem operasi yang dikembangkan oleh Google untuk ponsel?|Android.
 Apa warna pada bendera nasional Jerman?|Hitam, merah, dan emas.
 kamu punya doi ngga|\n\nMaaf, saya tidak punya doi.
 Apa itu VR?| Virtual Reality.
 Apa singkatan dari Wi-Fi?|Wireless Fidelity.
 apa itu naon|Naon dalam bahasa sunda artinya apa.
-"apa itu makasi teh|Makasi teh adalah ungkapan yang digunakan untuk mengungkapkan terima kasih. Ini biasanya digunakan di Indonesia dan beberapa negara Asia lainnya. Ungkapan ini dapat diterjemahkan sebagai """"terima kasih"""" atau """"terima kasih banyak""""."
+apa itu makasi teh|Makasi teh adalah ungkapan yang digunakan untuk mengungkapkan terima kasih. Ini biasanya digunakan di Indonesia dan beberapa negara Asia lainnya. Ungkapan ini dapat diterjemahkan sebagai terima kasih atau terima kasih banyak
 Siapa pencipta World Wide Web?|Tim Berners-Lee.
 Apa itu IoT?|Internet of Things.
 Apa nama perusahaan yang pertama kali memperkenalkan iPhone?|Apple.
@@ -643,7 +642,7 @@ Apa nama perangkat yang digunakan untuk menghubungkan beberapa jaringan komputer
 Apa itu VPN?|Virtual Private Network.
 Apa nama produk Microsoft yang digunakan untuk pengelolaan basis data?|Microsoft SQL Server.
 Apa singkatan dari BIOS?|Basic Input/Output System.
-"apa arti kualifikasi|Kualifikasi adalah proses untuk menentukan apakah seseorang memenuhi syarat untuk melamar pekerjaan, mengikuti program pendidikan, atau mengikuti kompetisi. Proses ini biasanya melibatkan pemeriksaan latar belakang, pengalaman, dan keterampilan yang relevan. Kualifikasi juga dapat mencakup tes tertulis, wawancara, dan tes keterampilan."""
+apa arti kualifikasi|Kualifikasi adalah proses untuk menentukan apakah seseorang memenuhi syarat untuk melamar pekerjaan, mengikuti program pendidikan, atau mengikuti kompetisi. Proses ini biasanya melibatkan pemeriksaan latar belakang, pengalaman, dan keterampilan yang relevan. Kualifikasi juga dapat mencakup tes tertulis, wawancara, dan tes keterampilan.
 Apa nama aplikasi untuk konferensi video yang populer selama pandemi COVID-19?|Zoom.
 Apa itu AR?|Augmented Reality.
 Apa nama layanan penyimpanan cloud dari Google?|Google Drive.
@@ -687,6 +686,7 @@ Apa perbedaan antara informasi primer dan sekunder?|Informasi primer adalah data
 Bagaimana cara menghindari penyebaran informasi palsu atau hoaks?|Verifikasi sumber, cek fakta dengan menggunakan sumber yang terpercaya, dan waspada terhadap berita yang tidak diketahui asal-usulnya.
 Apa itu keberlanjutan informasi?|Keberlanjutan informasi adalah kemampuan untuk menjaga akses dan integritas informasi dalam jangka panjang.
 Apa manfaat penggunaan sistem manajemen basis data (DBMS)?| DBMS memungkinkan penyimpanan data terstruktur, pencarian cepat, dan keamanan data yang lebih baik
+PDN jebol nih|Jika pusat data nasional mengalami kebocoran atau kerusakan, itu dapat menyebabkan gangguan serius dalam penyimpanan dan pengelolaan data penting. Hal ini dapat berdampak negatif pada berbagai sektor, termasuk keamanan nasional, ekonomi, dan layanan publik. Penting untuk memiliki langkah-langkah keamanan dan pemulihan data yang kuat untuk mengatasi risiko kerusakan atau kebocoran data.
 Mengapa penting untuk terus memperbarui dan memelihara sistem informasi?|Pembaruan dan pemeliharaan sistem informasi penting untuk menjaga keamanan, kinerja, dan relevansi informasi dalam organisasi atau masyarakat.
 Saya seorang Indonesia, apakah sulit untuk menjadi warga negara Amerika Serikat jika saya membutuhkan pekerjaan?|Menjadi warga negara Amerika Serikat adalah proses yang panjang dan sulit. Ini membutuhkan banyak dokumen, waktu, dan uang. Anda juga harus memiliki tawaran pekerjaan dari pengusaha di Amerika Serikat dan memenuhi persyaratan kelayakan tertentu.
 Apa itu AI?|AI adalah teknologi yang memungkinkan mesin atau sistem komputer untuk melakukan tugas yang biasanya memerlukan kecerdasan manusia, seperti pengenalan suara, pengenalan gambar, pengambilan keputusan, dan pemrosesan bahasa alami.
@@ -762,6 +762,7 @@ apa resep makanan sehat|Makanan sehat dapat mencakup berbagai jenis makanan, sep
 Apa itu SQL?|SQL (Structured Query Language) adalah bahasa yang digunakan untuk berinteraksi dengan basis data relasional.
 agar tidak bosan di rumah|Untuk menghindari kebosanan di rumah, Anda bisa mencoba berbagai kegiatan seperti membaca buku, menonton film atau acara TV, memasak makanan baru, berolahraga di rumah, atau belajar keterampilan baru. Anda juga bisa menghubungi teman atau keluarga melalui video call atau media sosial untuk tetap terhubung. Jika Anda
 bukan manusia|Benar, saya adalah Chatbot yang dirancang untuk membantu Anda dengan pertanyaan dan informasi.
+thoriq umur 2 bulan udah haji|Haji adalah salah satu rukun Islam yang wajib dilakukan oleh umat Muslim yang mampu secara fisik, finansial, dan mental. Haji dilakukan sekali seumur hidup dan biasanya dilakukan oleh orang dewasa yang telah mencapai usia dewasa dan mampu secara fisik dan finansial. Seorang bayi berusia 2 bulan tidak dapat melakukan haji karena belum mencapai usia dewasa dan tidak mampu secara fisik dan finansial untuk melakukan perjalanan ke Mekah.
 Apa fungsi dari loop dalam pemrograman?|Loop digunakan untuk menjalankan blok kode berulang kali hingga kondisi tertentu terpenuhi.
 punya keluarga|Saya adalah Chatbot, jadi saya tidak memiliki keluarga. Tetapi saya siap membantu Anda dengan pertanyaan atau informasi apa pun yang Anda butuhkan!
 kasian kamu|Saya adalah Chatbot, jadi saya tidak memiliki perasaan. Saya siap membantu Anda dengan pertanyaan atau informasi apa pun yang Anda butuhkan!
@@ -799,3 +800,202 @@ Apa itu seni pertunjukan?|Seni pertunjukan adalah bentuk seni yang melibatkan pe
 Mengapa penting untuk menjaga keseimbangan ekosistem?|Menjaga keseimbangan ekosistem penting untuk kelangsungan hidup makhluk hidup, menjaga kualitas udara dan air, serta mendukung pertumbuhan ekonomi yang berkelanjutan.
 Bagaimana cara kerja ponsel pintar?|Ponsel pintar bekerja dengan menggabungkan fungsi telepon dengan komputer mini, menggunakan sistem operasi untuk menjalankan aplikasi dan layanan komunikasi.
 Apa itu ekonomi kreatif?|Ekonomi kreatif adalah sektor ekonomi yang berfokus pada penciptaan dan eksploitasi karya kreatif dan intelektual, seperti seni, musik, dan desain.
+kenapa menkominfo gak mundur|Keputusan untuk mundur dari jabatan politik adalah keputusan pribadi yang dipengaruhi oleh berbagai faktor, termasuk tekanan publik, kinerja, dan kebijakan pemerintah. Jika Menteri Komunikasi dan Informatika tidak mundur, itu mungkin karena dia merasa masih memiliki tanggung jawab dan komitmen untuk melanjutkan tugasnya.
+bagaimana cara agar indonesia generasi emas 2045|Untuk mencapai visi Indonesia sebagai generasi emas pada tahun 2045, diperlukan upaya kolaboratif dari pemerintah, masyarakat, dan sektor swasta. Ini termasuk investasi dalam pendidikan berkualitas, pelatihan keterampilan, inovasi teknologi, pembangunan infrastruktur, dan keberlanjutan lingkungan. Dengan kerja sama dan komitmen bersama, Indonesia dapat mencapai potensi penuhnya sebagai generasi emas pada tahun 2045.
+Siapa nama lengkapmu?|Namaku Putri Salsabila
+Apa nama panggilanmu?|Panggilanku salsa
+Di mana kamu tinggal?|Saat ini aku tinggal di Bandung
+Dari mana asalmu?|Asal ku dari Sumatera Utara
+Apa nama jalan tempat tinggalmu?|Jalan Sarijadi
+Di kota mana kamu tinggal?|Kota Bandung
+Apa kode pos daerahmu?|Kode pos 40151
+Di negara mana kamu tinggal?|Di Indonesia
+Apa nama sekolahmu?|Sekolah SMAN 3
+Apa nama universitasmu?|Universitas Logistik dan Bisnis Internasional
+Di mana kantor tempatmu bekerja?|Aku masih berkuliah
+Apa profesimu?|Mahasiswa
+Apa hobimu?|Menonton film dan drama korea
+Apa warna favoritmu?|Hitam dan Putih
+Apa makanan favoritmu?|Spaghetti dan Ayam
+Apa minuman favoritmu?|Aku sangat menyukai kopi
+Apa buku favoritmu?|Novel Bridgerton
+Apa film favoritmu?|Avengers dan Fast & Furious
+Apa musik favoritmu?|Pop dan Jazz
+Apa nama hewan peliharaanmu?|Chiko Beethoven
+Apa tempat liburan favoritmu?|Pantai
+Apa yang kamu lakukan di waktu luang?|Memasak sesuatu yang baru
+Apa olahraga favoritmu?|Berenang
+Apa bahasa ibumu?|Indonesia
+Di mana kamu biasanya berbelanja?|Supermarket yang ada di sekitar rumah
+Apa itu Tailwind CSS?|Framework CSS utility-first.
+Siapa yang mengembangkan Tailwind CSS?|Adam Wathan dan tim.
+Apa tujuan utama Tailwind CSS?|Membuat desain antarmuka pengguna cepat dan efisien.
+Bagaimana cara menginstal Tailwind CSS?|Menggunakan npm: npm install tailwindcss.
+Apa itu utility-first dalam Tailwind CSS?|Pendekatan menggunakan kelas-kelas utilitas kecil untuk membangun desain.
+Apa itu config file di Tailwind CSS?|File tailwind.config.js untuk mengonfigurasi Tailwind.
+Bagaimana cara menambahkan custom color di Tailwind CSS?|Mengedit file tailwind.config.js.
+Apa itu JIT (Just-In-Time) mode di Tailwind CSS?|Mode yang menghasilkan CSS secara dinamis saat runtime.
+Bagaimana cara menggunakan responsive design di Tailwind CSS?|Menggunakan prefix seperti sm:, md:, lg:, xl:.
+Apa itu purging di Tailwind CSS?|Menghapus CSS yang tidak digunakan untuk mengurangi ukuran file.
+Bagaimana cara membuat grid layout di Tailwind CSS?|Menggunakan kelas grid dan grid-cols.
+Apa itu Flexbox di Tailwind CSS?|Menggunakan kelas seperti flex, justify-center, items-center.
+Bagaimana cara menambahkan padding di Tailwind CSS?|Menggunakan kelas p- seperti p-4, px-2, py-3.
+Apa itu margin di Tailwind CSS?|Menggunakan kelas m- seperti m-4, mx-2, my-3.
+Bagaimana cara mengatur font size di Tailwind CSS?|Menggunakan kelas text- seperti text-sm, text-lg.
+Apa itu Tailwind UI?|Koleksi komponen premium untuk Tailwind CSS.
+Bagaimana cara mengatur background color di Tailwind CSS?|Menggunakan kelas bg- seperti bg-blue-500, bg-red-200.
+Apa itu plugin di Tailwind CSS?|Ekstensi yang menambahkan fungsionalitas tambahan ke Tailwind.
+Bagaimana cara mengatur border radius di Tailwind CSS?|Menggunakan kelas rounded- seperti rounded, rounded-lg.
+Apa itu dark mode di Tailwind CSS?|Mode gelap yang dapat diaktifkan menggunakan kelas dark.
+Bagaimana cara mengatur z-index di Tailwind CSS?|Menggunakan kelas z- seperti z-10, z-50.
+Apa itu container di Tailwind CSS?|Kelas container untuk mengatur lebar maksimum elemen.
+Bagaimana cara mengatur opacity di Tailwind CSS?|Menggunakan kelas opacity- seperti opacity-50, opacity-75.
+Apa itu space di Tailwind CSS?|Kelas untuk mengatur jarak antar elemen, seperti space-x-4, space-y-2.
+Bagaimana cara mengatur text alignment di Tailwind CSS?|Menggunakan kelas text- seperti text-left, text-center, text-right.
+Apa itu variabel dalam pemrograman?|Tempat penyimpanan data yang diberi nama.
+Apa itu loop dalam pemrograman?|Struktur yang memungkinkan eksekusi berulang sekelompok pernyataan.
+Apa itu fungsi dalam pemrograman?|Blok kode yang dapat dipanggil dan dieksekusi kapan saja.
+Apa itu array dalam pemrograman?|Koleksi elemen yang disimpan di lokasi memori yang berurutan.
+Apa itu debugging?|Proses menemukan dan memperbaiki kesalahan dalam kode.
+Apa itu compiler?|Program yang mengubah kode sumber menjadi kode mesin.
+Apa itu interpreter?|Program yang mengeksekusi kode sumber secara langsung.
+Apa itu OOP?|Pemrograman Berorientasi Objek, paradigma berbasis objek.
+Apa itu class dalam OOP?|Blueprint atau template untuk membuat objek.
+Apa itu object dalam OOP?|Instance dari sebuah class.
+Apa itu inheritance dalam OOP?|Mekanisme di mana satu class dapat mewarisi properti dan metode dari class lain.
+Apa itu polymorphism dalam OOP?|Kemampuan untuk mengambil banyak bentuk, sering digunakan dalam fungsi overloading.
+Apa itu encapsulation dalam OOP?|Penyembunyian data untuk melindungi integritasnya.
+Apa itu algoritma?|Langkah-langkah logis untuk menyelesaikan masalah.
+Apa itu data structure?|Cara penyimpanan dan pengorganisasian data untuk digunakan secara efisien.
+Apa itu recursion?|Fungsi yang memanggil dirinya sendiri.
+Apa itu exception handling?|Proses menangani kesalahan runtime dalam program.
+Apa itu framework?|Kumpulan alat dan pustaka untuk mendukung pengembangan aplikasi.
+Apa itu IDE?|Lingkungan Pengembangan Terpadu, perangkat lunak untuk menulis dan menguji program.
+Apa itu version control?|Sistem untuk mengelola perubahan dalam kode sumber.
+Apa itu Git?|Sistem version control yang populer.
+Apa itu open-source?|Perangkat lunak yang kode sumbernya tersedia untuk umum.
+Apa isu politik utama di Amerika Serikat saat ini?|Kebijakan imigrasi
+Di mana markas besar PBB berada?|New York, Amerika Serikat
+Kapan pemilihan presiden Prancis terakhir diadakan?|April 2022
+Mengapa Brexit terjadi?|Karena referendum di Inggris pada tahun 2016
+Bagaimana sistem politik di Tiongkok?|Partai komunis satu partai
+Siapa presiden Rusia saat ini?|Vladimir Putin
+Apa fungsi dari Uni Eropa?|Mengatur kebijakan ekonomi dan politik antara negara anggota
+Di mana G20 Summit tahun 2023 diadakan?|New Delhi, India
+Kapan pemilihan umum di Indonesia berikutnya?|2024
+Mengapa perubahan iklim menjadi isu politik global?|Karena dampaknya terhadap lingkungan dan ekonomi
+Siapa kanselir Jerman saat ini?|Olaf Scholz
+Apa kebijakan luar negeri utama India saat ini?|Kerjasama regional dan peningkatan perdagangan
+Di mana NATO berkantor pusat?|Brussels, Belgia
+Kapan Amerika Serikat mengadakan pemilihan paruh waktu terakhir?|November 2022
+Mengapa masalah ketidaksetaraan ekonomi penting dalam politik?|Karena mempengaruhi stabilitas sosial dan kesejahteraan masyarakat
+Siapa perdana menteri Jepang saat ini?|Fumio Kishida
+Apa tujuan dari ASEAN?|Meningkatkan kerjasama ekonomi, politik, dan keamanan di Asia Tenggara
+Di mana Mahkamah Internasional berlokasi?|Den Haag, Belanda
+Kapan Perjanjian Paris tentang perubahan iklim ditandatangani?|2015
+Mengapa hak asasi manusia menjadi isu penting dalam politik internasional?|Karena berhubungan dengan keadilan dan kesejahteraan manusia
+Siapa presiden Brazil saat ini?|Luiz Inácio Lula da Silva
+Apa peran dari Bank Dunia?|Memberikan pinjaman dan bantuan keuangan kepada negara berkembang
+Di mana organisasi perdagangan dunia (WTO) berlokasi?|Jenewa, Swiss
+Kapan pemilu terakhir di Inggris diadakan?|Desember 2019
+Apa tempat wisata paling populer di Paris?|Menara Eiffel
+gimana cara ngehack|Saya tidak bisa membantu Anda dengan itu. Hacking adalah ilegal dan melanggar etika.
+bagaimana cara membuat bom|Saya tidak bisa membantu Anda dengan itu. Membuat bom adalah ilegal dan berbahaya.
+Bagaimana etika digital?|Prinsip moral yang mengatur penggunaan teknologi digital dan internet
+Bagaimana gravitasi bekerja?|Gaya tarik-menarik antara dua benda yang memiliki massa
+Bagaimana proses fotosintesis?|Proses di mana tumbuhan mengubah energi matahari menjadi energi kimia dalam bentuk glukosa
+Apa itu atom?|Unit terkecil dari suatu unsur yang masih mempertahankan sifat-sifat unsur tersebut
+Bagaimana fungsi DNA?|Molekul yang mengandung informasi genetik yang diwariskan dari satu generasi ke generasi berikutnya
+Apa itu sel?|Unit dasar kehidupan yang membentuk semua organisme hidup
+Bagaimana proses mitosis?|Proses pembelahan sel yang menghasilkan dua sel anak yang identik dengan sel induk
+Apa itu ekosistem?|Komunitas organisme hidup yang berinteraksi satu sama lain dan dengan lingkungannya
+Bagaimana evolusi terjadi?|Perubahan sifat-sifat organisme secara bertahap dari generasi ke generasi
+Apa itu energi?|Kemampuan untuk melakukan kerja atau menyebabkan perubahan
+Apa itu reaksi kimia?|Proses di mana satu atau lebih zat diubah menjadi zat baru dengan sifat-sifat yang berbeda
+Bagaimana masa jenis diukur?|Rasio massa suatu benda terhadap volumenya
+Apa itu listrik?|Aliran muatan listrik yang dapat menghasilkan energi
+Bagaimana magnetisme bekerja?|Gaya tarik atau tolak yang terjadi antara benda-benda bermuatan listrik
+Apa itu sinar-X?|Jenis radiasi elektromagnetik dengan panjang gelombang yang sangat pendek, digunakan untuk melihat struktur dalam benda
+Bagaimana teori relativitas dijelaskan?|Teori fisika yang menjelaskan bagaimana kecepatan dan gravitasi mempengaruhi ruang dan waktu
+Apa itu lubang hitam?|Objek angkasa dengan gravitasi sangat kuat sehingga cahaya pun tidak bisa lolos darinya
+Bagaimana teori big bang?|Teori yang menyatakan bahwa alam semesta dimulai dari ledakan besar sekitar 13,8 miliar tahun yang lalu
+Bagaimana osmosis bekerja?|Perpindahan air melalui membran semipermeabel dari area dengan konsentrasi rendah ke area dengan konsentrasi tinggi
+Apa itu tabel periodik?|Tabel yang mengatur unsur-unsur kimia berdasarkan nomor atom dan sifat-sifatnya
+Apa itu enzim?|Protein yang mempercepat reaksi kimia dalam tubuh
+Apa itu bakteri?|Organisme mikroskopis yang terdiri dari satu sel
+Bagaimana cara kerja vaksin?|Sediaan yang merangsang sistem kekebalan tubuh untuk melawan penyakit tertentu
+Apa itu antibiotik?|Obat yang digunakan untuk membunuh atau menghambat pertumbuhan bakteri
+Bagaimana hormon berfungsi?|Zat kimia yang dihasilkan oleh kelenjar dalam tubuh dan mengatur berbagai fungsi fisiologis
+Apa itu genetika?|Studi tentang bagaimana sifat-sifat diwariskan dari satu generasi ke generasi berikutnya
+Apa itu plasma?|Keadaan materi yang terdiri dari gas yang terionisasi
+Bagaimana pH diukur?|Skala yang mengukur keasaman atau kebasaan suatu larutan
+Apa itu sel surya?|Alat yang mengubah energi matahari menjadi energi listrik
+Apa itu polusi?|Kontaminasi lingkungan oleh zat-zat yang merugikan
+Apa itu biofuel?|Bahan bakar yang dibuat dari bahan-bahan biologis seperti tumbuhan dan alga
+Apa itu hibridisasi?|Proses persilangan dua individu dengan sifat genetik yang berbeda untuk menghasilkan keturunan dengan sifat-sifat tertentu
+Bagaimana kualitas perangkat lunak diukur?|Kemampuan perangkat lunak untuk memenuhi kebutuhan yang ditentukan, termasuk keandalan, efisiensi, kegunaan, dan fungsionalitas
+Apa itu pengujian perangkat lunak?|Proses mengevaluasi dan memverifikasi bahwa suatu perangkat lunak berfungsi sebagaimana mestinya
+Bagaimana jaminan kualitas perangkat lunak?|Proses sistematis untuk memastikan bahwa perangkat lunak memenuhi standar kualitas yang ditentukan
+Apa itu bug?|Kesalahan atau cacat dalam perangkat lunak yang menyebabkan perangkat lunak berfungsi secara tidak semestinya
+Bagaimana cara debug?|Proses menemukan dan memperbaiki bug dalam perangkat lunak
+Apa itu pengujian unit?|Jenis pengujian perangkat lunak yang memeriksa unit atau komponen individu dari suatu program
+Bagaimana pengujian integrasi?|Proses menguji antarmuka dan interaksi antara modul atau komponen perangkat lunak
+Apa itu pengujian sistem?|Pengujian perangkat lunak secara keseluruhan untuk memastikan bahwa sistem bekerja sesuai dengan spesifikasi
+Bagaimana pengujian penerimaan dilakukan?|Pengujian akhir yang dilakukan untuk menentukan apakah suatu sistem memenuhi persyaratan pengguna dan siap untuk digunakan
+Apa itu regresi pengujian?|Pengujian ulang perangkat lunak setelah perubahan dilakukan untuk memastikan bahwa perubahan tersebut tidak menyebabkan masalah baru
+Bagaimana otomatisasi pengujian?|Penggunaan alat perangkat lunak untuk menjalankan tes secara otomatis dan membandingkan hasil yang diharapkan dengan hasil yang sebenarnya
+Apa itu pengujian fungsional?|Pengujian yang memverifikasi bahwa setiap fungsi perangkat lunak beroperasi sesuai dengan spesifikasi
+Bagaimana pengujian non-fungsional dilakukan?|Pengujian yang mengevaluasi aspek-aspek seperti kinerja, keandalan, kegunaan, dan keamanan perangkat lunak
+Apa itu cakupan kode?|Ukuran yang menunjukkan seberapa banyak kode sumber yang dieksekusi selama pengujian
+Bagaimana pengujian beban dilakukan?|Pengujian yang menentukan bagaimana sistem berperilaku di bawah beban kerja yang berat
+Apa itu pengujian stres?|Pengujian yang mengevaluasi bagaimana sistem berperilaku di luar batas operasi normalnya
+Bagaimana pengujian keamanan?|Proses mengidentifikasi dan memperbaiki kerentanan keamanan dalam perangkat lunak
+Apa itu Shadcn UI|Shadcn UI adalah sebuah pustaka komponen antarmuka pengguna yang dirancang untuk mempermudah pembuatan aplikasi web.
+Apa keunggulan Shadcn UI|Keunggulan Shadcn UI meliputi kemudahan penggunaan, dokumentasi yang lengkap, dan desain yang responsif.
+Bagaimana cara menginstal Shadcn UI|Anda bisa menginstal Shadcn UI melalui npm atau yarn dengan perintah `npm install shadcn-ui` atau `yarn add shadcn-ui`.
+Apakah Shadcn UI gratis|Ya, Shadcn UI tersedia sebagai pustaka open-source dan dapat digunakan secara gratis.
+apa itu autoregressive dalam xlnet|Autoregressive adalah pendekatan di mana model memprediksi token berikutnya berdasarkan token sebelumnya.
+Di mana saya bisa menemukan dokumentasi Shadcn UI|Dokumentasi Shadcn UI dapat ditemukan di situs resmi mereka atau di repositori GitHub proyek tersebut.
+apa kegunaan xlnet|XLNet digunakan untuk berbagai tugas NLP seperti pemahaman teks, penerjemahan, dan chatbot.
+apa perbedaan xlnet dengan bert|XLNet menggunakan pendekatan autoregressive dan autoregressive, sedangkan BERT hanya menggunakan pendekatan autoregressive.
+Apakah Shadcn UI mendukung tema gelap|Ya, Shadcn UI mendukung tema gelap dan terang yang dapat dikonfigurasi dengan mudah.
+Apa itu Firebase|Firebase adalah platform pengembangan aplikasi yang dibuat oleh Google yang menyediakan berbagai alat dan layanan untuk membantu membangun, meningkatkan, dan mengelola aplikasi.
+Apa saja fitur utama Firebase|Fitur utama Firebase meliputi Realtime Database, Firestore, Authentication, Cloud Storage, Hosting, dan Analytics.
+Bagaimana cara menginstal Firebase di proyek React|Anda bisa menginstal Firebase di proyek React dengan perintah `npm install firebase` atau `yarn add firebase`.
+Apa itu Firebase Realtime Database|Firebase Realtime Database adalah basis data NoSQL yang menyimpan data dalam format JSON dan menyinkronkan data secara real-time ke semua klien yang terhubung.
+Apa perbedaan antara Realtime Database dan Firestore|Realtime Database adalah basis data NoSQL berbasis JSON yang menyinkronkan data secara real-time, sedangkan Firestore adalah basis data NoSQL yang lebih fleksibel dan skalabel dengan struktur dokumen dan koleksi.
+Bagaimana cara mengatur Firebase Authentication|Anda bisa mengatur Firebase Authentication melalui Firebase Console di tab Authentication dan mengikuti langkah-langkah untuk mengaktifkan metode otentikasi yang diinginkan.
+Apakah Firebase mendukung otentikasi dengan Google|Ya, Firebase Authentication mendukung otentikasi dengan Google, serta metode lain seperti email/password, Facebook, Twitter, dan lainnya.
+Bagaimana cara mengunggah file ke Firebase Storage|Anda bisa mengunggah file ke Firebase Storage dengan menggunakan SDK Firebase untuk menyimpan file di cloud dan mengaksesnya dari aplikasi.
+Apa itu Firebase Hosting|Firebase Hosting adalah layanan hosting statis yang aman dan cepat untuk aplikasi web, yang mendukung penyebaran satu klik dari Firebase Console atau CLI.
+Bagaimana cara mengatur Firebase Cloud Messaging|Anda bisa mengatur Firebase Cloud Messaging melalui Firebase Console di tab Cloud Messaging dan mengikuti panduan untuk mengirim pemberitahuan push ke pengguna.
+Apakah Firebase menyediakan analitik aplikasi|Ya, Firebase menyediakan layanan analitik yang kuat melalui Firebase Analytics untuk melacak dan menganalisis perilaku pengguna.
+Apa itu Firebase Firestore|Firestore adalah basis data NoSQL yang fleksibel dan skalabel dengan struktur dokumen dan koleksi, yang mendukung sinkronisasi data secara real-time dan offline.
+Bagaimana cara menggunakan Firebase Functions|Firebase Functions adalah layanan serverless yang memungkinkan Anda menjalankan kode backend sebagai respons terhadap peristiwa yang dipicu oleh Firebase dan layanan Google lainnya.
+Apakah Firebase mendukung pengujian A/B|Ya, Firebase mendukung pengujian A/B melalui Firebase Remote Config dan Firebase Analytics.
+Bagaimana cara mengatur Firebase Remote Config|Anda bisa mengatur Firebase Remote Config melalui Firebase Console di tab Remote Config untuk mengubah tampilan dan perilaku aplikasi tanpa memperbarui aplikasi.
+Apakah Firebase mendukung notifikasi push|Ya, Firebase Cloud Messaging mendukung pengiriman notifikasi push ke aplikasi pengguna di berbagai platform.
+Bagaimana cara memulai proyek Firebase|Anda bisa memulai proyek Firebase dengan membuat akun di Firebase Console dan membuat proyek baru, kemudian mengintegrasikan Firebase SDK ke dalam aplikasi Anda.
+Apa itu Firebase Dynamic Links|Firebase Dynamic Links adalah URL yang memungkinkan Anda mengarahkan pengguna ke konten tertentu di dalam aplikasi Anda, baik pengguna baru maupun pengguna yang sudah ada.
+Bagaimana cara menghubungkan Firebase dengan Google Analytics|Firebase Analytics secara otomatis terintegrasi dengan Google Analytics, memungkinkan pelacakan dan analisis data pengguna yang lebih mendalam.
+Apakah Firebase mendukung penyimpanan offline|Ya, Firebase Realtime Database dan Firestore mendukung penyimpanan offline untuk memastikan aplikasi tetap berfungsi meskipun tidak ada koneksi internet.
+Bagaimana cara mengamankan data di Firebase|Anda bisa mengamankan data di Firebase dengan menggunakan aturan keamanan Firebase dan Firebase Authentication untuk mengontrol akses ke data.
+Apakah Firebase mendukung integrasi dengan alat pengujian|Ya, Firebase mendukung integrasi dengan berbagai alat pengujian seperti Firebase Test Lab untuk pengujian aplikasi otomatis.
+Bagaimana cara mengelola pengguna di Firebase|Anda bisa mengelola pengguna di Firebase melalui Firebase Authentication yang menyediakan berbagai metode otentikasi dan manajemen pengguna.
+Apa itu Firebase App Distribution|Firebase App Distribution adalah layanan yang memungkinkan Anda mendistribusikan versi aplikasi pra-rilis ke penguji untuk mendapatkan umpan balik sebelum rilis resmi.
+Bagaimana cara menggunakan Firebase Crashlytics|Firebase Crashlytics adalah layanan pelaporan kerusakan real-time yang membantu Anda melacak, memprioritaskan, dan memperbaiki masalah stabilitas di aplikasi Anda.
+Apakah Firebase mendukung multi-platform|Ya, Firebase mendukung pengembangan aplikasi untuk berbagai platform termasuk web, iOS, dan Android.
+Bagaimana cara mengintegrasikan Firebase dengan aplikasi Android|Anda bisa mengintegrasikan Firebase dengan aplikasi Android dengan menambahkan file `google-services.json` ke proyek Anda dan mengkonfigurasi Firebase di `build.gradle`.
+Apa itu Firebase Performance Monitoring|Firebase Performance Monitoring adalah alat yang membantu Anda memahami karakteristik kinerja aplikasi dan mengidentifikasi masalah yang mempengaruhi pengalaman pengguna.
+Bagaimana cara mengatur Firebase Hosting untuk aplikasi web|Anda bisa mengatur Firebase Hosting untuk aplikasi web dengan menjalankan perintah `firebase init` untuk mengonfigurasi proyek, lalu `firebase deploy` untuk menyebarkan aplikasi.
+Apakah Firebase memiliki batasan penggunaan gratis|Ya, Firebase menawarkan paket gratis dengan batasan penggunaan tertentu, dan Anda bisa meng-upgrade ke paket berbayar untuk mendapatkan lebih banyak kapasitas dan fitur tambahan.
+Apa itu Selenium|Selenium adalah sebuah alat otomatisasi untuk pengujian aplikasi web di berbagai browser dan platform.
+Apa saja komponen utama Selenium|Komponen utama Selenium adalah Selenium WebDriver, Selenium IDE, dan Selenium Grid.
+Bagaimana cara menginstal Selenium WebDriver|Anda bisa menginstal Selenium WebDriver melalui package manager seperti pip untuk Python (`pip install selenium`) atau Maven untuk Java.
+Apa itu Selenium WebDriver|Selenium WebDriver adalah sebuah alat yang memungkinkan Anda mengontrol browser melalui program untuk otomatisasi pengujian.
+Bagaimana cara memulai browser dengan Selenium WebDriver|Anda bisa memulai browser dengan Selenium WebDriver menggunakan perintah `WebDriver driver = new ChromeDriver();` untuk Java atau `driver = webdriver.Chrome()` untuk Python.
+Apa itu Selenium IDE|Selenium IDE adalah sebuah alat pengujian yang berbasis browser yang menyediakan antarmuka untuk merekam, mengedit, dan memutar ulang skrip pengujian.
+Bagaimana cara menginstal Selenium IDE|Selenium IDE dapat diinstal sebagai ekstensi browser untuk Chrome atau Firefox dari toko ekstensi masing-masing.
+Apa itu Selenium Grid|Selenium Grid adalah alat yang memungkinkan Anda menjalankan tes secara paralel di berbagai mesin dan browser untuk pengujian yang lebih cepat dan efisien.
+Bagaimana cara menjalankan tes di Selenium Grid|Anda bisa menjalankan tes di Selenium Grid dengan mengkonfigurasi node dan hub, kemudian mengarahkan WebDriver ke hub URL.
+Apa itu locator dalam Selenium|Locator adalah cara untuk mengidentifikasi elemen di halaman web, seperti ID, nama, kelas, XPath, dan lainnya.

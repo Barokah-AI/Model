@@ -30,7 +30,10 @@ else:
     print("CUDA not available. Check your CUDA installation and NVIDIA drivers.")
 
 # Load dataset
-df = pd.read_csv("dataset/13002-14001.csv", sep="|")
+df = pd.read_csv("dataset/barokah.csv", sep="|")
+
+# dataset di kali 5
+df = pd.concat([df]*5, ignore_index=True)
 
 # Encode labels
 df['label'] = df['answer'].astype('category').cat.codes
@@ -49,7 +52,7 @@ model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_l
 
 # Tokenize dataset and include labels
 def preprocess_function(examples):
-    inputs = tokenizer(examples['question'], truncation=True, padding=True)
+    inputs = tokenizer(examples['question'], truncation=True, padding='max_length', max_length=128)
     inputs['label'] = examples['label']
     return inputs
 
@@ -69,13 +72,13 @@ for dataset in [train_dataset, eval_dataset]:
 # Training arguments
 training_args = TrainingArguments(
     output_dir='./results',
-    num_train_epochs=100,
+    num_train_epochs=40,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=32,
-    warmup_steps=600,
+    warmup_steps=8000,
     weight_decay=0.01,
     logging_dir='./logs',
-    logging_steps=100,
+    logging_steps=400,
     evaluation_strategy="steps",
     learning_rate=3e-5,
     save_total_limit=5,
