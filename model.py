@@ -90,11 +90,11 @@ training_args = TrainingArguments(
 )
 
 # Explicitly move model to GPU
-# if torch.cuda.is_available():
-#     model.to(torch.device("cuda"))
-#     print("Model moved to GPU")
-# else:
-#     print("CUDA not available. Training on CPU.")
+if torch.cuda.is_available():
+    model.to(torch.device("cuda"))
+    print("Model moved to GPU")
+else:
+    print("CUDA not available. Training on CPU.")
 
 # Define accuracy metric
 metric = evaluate.load("accuracy", trust_remote_code=True)
