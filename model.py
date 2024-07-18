@@ -21,13 +21,23 @@ def get_next_model_version(models_directory):
             max_version = max(max_version, number)
     return name_models + str(max_version + 1)
 
+def get_next_model_version(models_directory):
+    contents = os.listdir(models_directory)
+    max_version = 0
+    for item in contents:
+        match = re.search(r'v(\d+)', item)
+        if match:
+            number = int(match.group(1))
+            max_version = max(max_version, number)
+    return name_models + str(max_version + 1)
+
 # Verify CUDA availability and device
-print("CUDA available:", torch.cuda.is_available())
-print("Number of GPUs:", torch.cuda.device_count())
+print("CUDA Available:", torch.cuda.is_available())
+print("Number Of GPUs:", torch.cuda.device_count())
 if torch.cuda.is_available():
-    print("CUDA device name:", torch.cuda.get_device_name(0))
+    print("CUDA Device Name:", torch.cuda.get_device_name(0))
 else:
-    print("CUDA not available. Check your CUDA installation and NVIDIA drivers.")
+    print("CUDA not available. Check Your CUDA Installation and NVIDIA drivers.")
 
 # Load dataset
 df = pd.read_csv("dataset/barokah.csv", sep="|")
@@ -118,7 +128,7 @@ trainer = Trainer(
 )
 
 # Print device to verify
-print("Training on device:", trainer.args.device)
+print("Training On Device:", trainer.args.device)
 
 # Train model
 trainer.train()
