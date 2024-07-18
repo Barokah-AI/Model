@@ -9,8 +9,8 @@ df = pd.read_csv('dataset/questions.csv', delimiter='|', names=['question', 'ans
 tokenizer = T5Tokenizer.from_pretrained('t5-small')
 
 # Combine question and answer into a single string for training
-# inputs = "generate answer: " + df['question'] + " </s>"
-# targets = df['answer'] + " </s>"
+inputs = "generate answer: " + df['question'] + " </s>"
+targets = df['answer'] + " </s>"
 
 class QADataset(torch.utils.data.Dataset):
     def __init__(self, inputs, targets, tokenizer, max_length=64):
