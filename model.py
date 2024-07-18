@@ -109,13 +109,13 @@ def compute_metrics(eval_pred):
     return metric.compute(predictions=predictions, references=labels)
 
 # Trainer
-# trainer = Trainer(
-#     model=model,
-#     args=training_args,
-#     train_dataset=train_dataset,
-#     eval_dataset=eval_dataset,
-#     compute_metrics=compute_metrics
-# )
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset,
+    compute_metrics=compute_metrics
+)
 
 # Print device to verify
 print("Training on device:", trainer.args.device)
