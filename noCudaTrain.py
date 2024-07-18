@@ -51,3 +51,29 @@ eval_dataset = eval_dataset.map(preprocess_function, batched=True)
 # Set format for PyTorch
 train_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
 eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
+
+# Validate labels
+num_labels = len(df['label'].unique())
+for dataset in [train_dataset, eval_dataset]:
+    for example in dataset:
+        assert 0 <= example['label'] < num_labels, f"Invalid label {example['label']} found!"
+
+# Training arguments
+training_args = TrainingArguments(
+    output_dir='./results',
+    num_train_epochs=100,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=32,
+    warmup_steps=600,
+    weight_decay=0.01,
+    logging_dir='./logs',
+    logging_steps=100,
+    evaluation_strategy="steps",
+    learning_rate=3e-5,
+    save_total_limit=5,
+    disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
+    load_best_model_at_end=True,
+    metric_for_best_model="eval_accuracy",
+    greater_is_better=True,
+    no_cuda=True  # Tidak menggunakan CUDA
+)
