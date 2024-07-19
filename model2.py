@@ -48,15 +48,15 @@ training_args = TrainingArguments(
 )
 
 # Create Trainer
-trainer = Trainer(
-    model=model,                         
-    args=training_args,                  
-    train_dataset=dataset,         
-)
+# trainer = Trainer(
+#     model=model,                         
+#     args=training_args,                  
+#     train_dataset=dataset,         
+# )
 
-# Train the model
-trainer.train()
+# # Train the model
+# trainer.train()
 
-# Save the model
-model.save_pretrained('t5_qa_model')
-tokenizer.save_pretrained('t5_qa_model')
+# # Save the model
+# model.save_pretrained('t5_qa_model')
+# tokenizer.save_pretrained('t5_qa_model')
