@@ -3,14 +3,17 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, Train
 import torch
 
 # Load the dataset
-df = pd.read_csv('dataset/questions.csv', delimiter='|', names=['question', 'answer'])
+df = pd.read_csv('dataset/barokah.csv', delimiter='|', names=['question', 'jawab'])
 
 # Prepare the dataset
 tokenizer = T5Tokenizer.from_pretrained('t5-small')
 
 # Combine question and answer into a single string for training
 inputs = "generate answer: " + df['question'] + " </s>"
-targets = df['answer'] + " </s>"
+targets = df['answer'] + " </s>"\
+
+inputs = "generate jawaban: " + df['question'] + " </s>"
+targets = df['jawaban'] + " </s>"
 
 class QADataset(torch.utils.data.Dataset):
     def __init__(self, inputs, targets, tokenizer, max_length=64):
@@ -49,6 +52,13 @@ training_args = TrainingArguments(
 
 # Create Trainer
 trainer = Trainer(
+    model=model,                         
+    args=training_args,                  
+    train_dataset=dataset,         
+)
+
+# Create Trainer
+trainer = trainer(
     model=model,                         
     args=training_args,                  
     train_dataset=dataset,         
