@@ -51,17 +51,17 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=len(df['label'].unique()))
 
 # Tokenize dataset and include labels
-def preprocess_function(examples):
-    inputs = tokenizer(examples['question'], truncation=True, padding='max_length', max_length=128)
-    inputs['label'] = examples['label']
-    return inputs
+# def preprocess_function(examples):
+#     inputs = tokenizer(examples['question'], truncation=True, padding='max_length', max_length=128)
+#     inputs['label'] = examples['label']
+#     return inputs
 
-train_dataset = train_dataset.map(preprocess_function, batched=True)
-eval_dataset = eval_dataset.map(preprocess_function, batched=True)
+# train_dataset = train_dataset.map(preprocess_function, batched=True)
+# eval_dataset = eval_dataset.map(preprocess_function, batched=True)
 
-# Set format for PyTorch
-train_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
-eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
+# # Set format for PyTorch
+# train_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
+# eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
 
 # Validate labels
 num_labels = len(df['label'].unique())
