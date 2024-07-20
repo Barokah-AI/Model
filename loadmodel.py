@@ -23,4 +23,6 @@ def get_answer(question):
     # return outputs
 
     # Test the model
-while True:
+    while True:
+        user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
+        if user_input.lower() == 'exit':
