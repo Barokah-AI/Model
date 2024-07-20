@@ -21,3 +21,6 @@ def get_answer(question):
     print(answer)
     return label_dict[answer]
     # return outputs
+
+    # Test the model
+while True:
