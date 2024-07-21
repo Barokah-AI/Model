@@ -7,12 +7,15 @@ version = 6
 df = pd.read_csv("dataset/13002-14001.csv", sep="|")
 
 # Encode labels
+# Convert answers to categorical labels and create a label dictionary
 df['label'] = df['answer'].astype('category').cat.codes
 label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
+# Load the tokenizer and model
+model_version = "./models/model v" + str(version)
+tokenizer = BertTokenizer.from_pretrained(model_version)
+model = BertForSequenceClassification.from_pretrained(model_version)
 
-tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
-model = BertForSequenceClassification.from_pretrained("./models/model v"+str(version))
 
 
 def get_answer(question):
