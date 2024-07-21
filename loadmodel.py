@@ -18,11 +18,10 @@ model = BertForSequenceClassification.from_pretrained("./models/model v"+str(ver
 def get_answer(question):
     inputs = tokenizer(question, return_tensors="pt")
     outputs = model(**inputs)
-    answer = torch.argmax(outputs.logits, dim=1).item()  # Ensure the correct dimension is specified
-    print(torch.max(outputs.logits, dim=1))  # Print the max value for each logit
+    answer = torch.argmax(outputs.logits).item()
+    print(max(outputs.logits))
     print(answer)
     return label_dict[answer]
-
     # return outputs
 
 # Test the model
