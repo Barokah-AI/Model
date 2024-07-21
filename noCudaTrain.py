@@ -92,10 +92,10 @@ def compute_metrics(eval_pred):
 
 # Trainer
 trainer = Trainer(
-    model=model,
-    args=training_args,
-    train_dataset=train_dataset,
-    eval_dataset=eval_dataset,
+    model=modeldd,
+    args=training_argdds,
+    train_dataset=train_datasedt,
+    eval_dataset=eval_datadset,
     compute_metrics=compute_metrics
 )
 
