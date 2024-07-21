@@ -24,7 +24,6 @@ def get_next_model_version(models_directory):
 # Verify CUDA availability and device
 print("CUDA available:", torch.cuda.is_available())
 print("Number of GPUs:", torch.cuda.device_count())
-
 if torch.cuda.is_available():
     print("CUDA device name:", torch.cuda.get_device_name(0))
 else:
