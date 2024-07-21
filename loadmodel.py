@@ -26,11 +26,11 @@ def get_answer(question):
 
 # Test the model
 while True:
-    user_input = input("Tanyakanvvv sesuatu (atau ketik 'exit' untuk keluar): ")
-    if user_input.lower() == 'exvvvit':
-        print("Terimavv kasih! Sampai jumpa!")
+    user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
+    if user_input.lower() == 'exit':
+        print("Terima kasih! Sampai jumpa!")
         break
     answer = get_answer(user_input)
-    print(f"Jawabvvan: {answer}")
+    print(f"Jawaban: {answer}")
 
 print(label_dict)
