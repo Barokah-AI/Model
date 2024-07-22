@@ -81,3 +81,6 @@ training_args = TrainingArguments(
     logging_steps=400,
     evaluation_strategy="steps",
     learning_rate=3e-5,
+    save_total_limit=5,
+    disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
+    load_best_model_at_end=True,
