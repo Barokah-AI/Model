@@ -1,3 +1,4 @@
+# Description: This script is used to train a BERT model using the Indobert model from IndoNLU. The model is trained using a dataset of questions and answers. The model is then saved to a directory for later use. The script also includes a function to predict the answer to a given question using the trained model.
 import tensorflow as tf_keras
 from transformers import TFBertForSequenceClassification, BertTokenizer
 import pandas as pd
@@ -12,8 +13,10 @@ df = pd.read_csv('questions.csv', sep='|', usecols=['question', 'answer'])
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
 
+# Regular expression to escape punctuation
 punct_re_escape = re.compile('[%s]' % re.escape('!"#$%&()*+,./:;<=>?@[\\]^_`{|}~'))
 
+# Normalize sentence
 def normalize_sentence(sentence):
     sentence = punct_re_escape.sub('', sentence.lower())
     sentence = ' '.join(sentence.split())
@@ -42,6 +45,7 @@ tokenizer = BertTokenizer.from_pretrained('indobenchmark/indobert-base-p2')
 input_ids = []
 attention_masks = []
 
+# Tokenisasi data
 for index, row in df_cleaned.iterrows():
     encoded = tokenizer.encode_plus(
         row['question'],
