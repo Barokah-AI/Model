@@ -23,3 +23,6 @@ def get_answer(question):
     return label_dict[answer]
     # return outputs
     
+# Test the model
+while True:
+    user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
