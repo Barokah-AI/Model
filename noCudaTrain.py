@@ -91,24 +91,24 @@ def compute_metrics(eval_pred):
     return metric.compute(predictions=predictions, references=labels)
 
 # Trainer
-trainer = Trainer(
-    model=model,
-    args=training_args,
-    train_dataset=train_dataset,
-    eval_dataset=eval_dataset,
-    compute_metrics=compute_metrics
-)
+# trainer = Trainer(
+#     model=model,
+#     args=training_args,
+#     train_dataset=train_dataset,
+#     eval_dataset=eval_dataset,
+#     compute_metrics=compute_metrics
+# )
 
-# Train model
-trainer.train()
+# # Train model
+# trainer.train()
 
-# Evaluate model
-eval_results = trainer.evaluate()
+# # Evaluate model
+# eval_results = trainer.evaluate()
 
-# Print evaluation results, including accuracy
-print(f"Evaluation results: {eval_results}")
+# # Print evaluation results, including accuracy
+# print(f"Evaluation results: {eval_results}")
 
-# Save model
-next_version = get_next_model_version(models_directory)
-model.save_pretrained("./models/" + next_version)
-tokenizer.save_pretrained("./models/" + next_version)
+# # Save model
+# next_version = get_next_model_version(models_directory)
+# model.save_pretrained("./models/" + next_version)
+# tokenizer.save_pretrained("./models/" + next_version)
