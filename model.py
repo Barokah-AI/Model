@@ -108,3 +108,7 @@ def compute_metrics(eval_pred):
         labels = torch.tensor(labels)
     predictions = torch.argmax(logits, dim=-1)
     return metric.compute(predictions=predictions, references=labels)
+
+
+# Trainer
+trainer = Trainer()
