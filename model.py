@@ -128,3 +128,6 @@ eval_results = trainer.evaluate()
 
 # Print evaluation results, including accuracy
 print(f"Evaluation results: {eval_results}")
+
+# Save model
+next_version = get_next_model_version(models_directory)
