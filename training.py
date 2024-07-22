@@ -68,3 +68,8 @@ validation_dataset = tf.data.Dataset.from_tensor_slices(({'input_ids': validatio
 # Load model
 model = TFBertForSequenceClassification.from_pretrained('indobenchmark/indobert-base-p2', num_labels=2)
 
+# Compile model
+optimizer = tf.keras.optimizers.Adam(learning_rate=3e-5)
+loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+model.compile(optimizer=optimizer, loss=loss, metrics=['accuracy'])
+
