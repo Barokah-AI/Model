@@ -37,3 +37,8 @@ for index, row in df.iterrows():
 
 df_cleaned = pd.DataFrame(cleaned_data)
 
+# Tokenisasi dan persiapan data
+tokenizer = BertTokenizer.from_pretrained('indobenchmark/indobert-base-p2')
+input_ids = []
+attention_masks = []
+
