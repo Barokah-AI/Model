@@ -61,3 +61,7 @@ labels = tf.constant(df_cleaned['answer'].values)
 # Split data menjadi train dan test set
 train_inputs, validation_inputs, train_labels, validation_labels = train_test_split(input_ids, labels, test_size=0.1)
 
+# Konversi ke TensorFlow Dataset
+train_dataset = tf.data.Dataset.from_tensor_slices(({'input_ids': train_inputs, 'attention_mask': attention_masks[:len(train_inputs)]}, train_labels))
+validation_dataset = tf.data.Dataset.from_tensor_slices(({'input_ids': validation_inputs, 'attention_mask': attention_masks[len(train_inputs):]}, validation_labels))
+
