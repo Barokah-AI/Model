@@ -124,3 +124,7 @@ print("Training on device:", trainer.args.device)
 
 # Train model
 trainer.train()
+
+# Evaluate model
+eval_results = trainer.evaluate()
+
