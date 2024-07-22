@@ -93,3 +93,5 @@ training_args = TrainingArguments(
 if torch.cuda.is_available():
     model.to(torch.device("cuda"))
     print("Model moved to GPU")
+else:
+    print("CUDA not available. Training on CPU.")
