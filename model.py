@@ -68,3 +68,10 @@ num_labels = len(df['label'].unique())
 for dataset in [train_dataset, eval_dataset]:
      for example in dataset:
         assert 0 <= example['label'] < num_labels, f"Invalid label {example['label']} found!"
+
+# Training arguments
+training_args = TrainingArguments(
+    output_dir='./results',
+    num_train_epochs=40,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=32,
