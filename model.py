@@ -11,3 +11,6 @@ import numpy as np
 models_directory = "./models"
 name_models = "model v"
 
+def get_next_model_version(models_directory):
+    contents = os.listdir(models_directory)
+    max_version = 0
