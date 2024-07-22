@@ -7,3 +7,7 @@ import os
 import re
 import evaluate
 import numpy as np
+
+models_directory = "./models"
+name_models = "model v"
+
