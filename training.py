@@ -42,3 +42,15 @@ tokenizer = BertTokenizer.from_pretrained('indobenchmark/indobert-base-p2')
 input_ids = []
 attention_masks = []
 
+for index, row in df_cleaned.iterrows():
+    encoded = tokenizer.encode_plus(
+        row['question'],
+        add_special_tokens=True,
+        max_length=64,
+        pad_to_max_length=True,
+        return_attention_mask=True,
+        return_tensors='tf'
+    )
+    input_ids.append(encoded['input_ids'])
+    attention_masks.append(encoded['attention_mask'])
+
