@@ -84,3 +84,7 @@ training_args = TrainingArguments(
     save_total_limit=5,
     disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
     load_best_model_at_end=True,
+    metric_for_best_model="eval_accuracy",
+    greater_is_better=True,
+    no_cuda=not torch.cuda.is_available()  # Ini akan menggunakan GPU jika tersedia
+)
