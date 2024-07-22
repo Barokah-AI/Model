@@ -34,3 +34,6 @@ df = pd.read_csv("dataset/barokah.csv", sep="|")
 
 # dataset di kali 5
 df = pd.concat([df]*5, ignore_index=True)
+
+# Encode labels
+df['label'] = df['answer'].astype('category').cat.codes
