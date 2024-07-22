@@ -131,3 +131,5 @@ print(f"Evaluation results: {eval_results}")
 
 # Save model
 next_version = get_next_model_version(models_directory)
+model.save_pretrained("./models/" + next_version )
+tokenizer.save_pretrained("./models/" + next_version )
