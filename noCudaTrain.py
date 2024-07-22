@@ -21,15 +21,15 @@ def get_next_model_version(models_directory):
             max_version = max(max_version, number)
     return name_models + str(max_version + 1)
 
-# Load dataset
-df = pd.read_csv("dataset/barokah-1.csv", sep="|")
+# # Load dataset
+# df = pd.read_csv("dataset/barokah-1.csv", sep="|")
 
-# Encode labels
-df['label'] = df['answer'].astype('category').cat.codes
-label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
+# # Encode labels
+# df['label'] = df['answer'].astype('category').cat.codes
+# label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
-# Split dataset
-train_df, eval_df = train_test_split(df, test_size=0.2)
+# # Split dataset
+# train_df, eval_df = train_test_split(df, test_size=0.2)
 
 # Convert to Hugging Face Dataset
 train_dataset = Dataset.from_pandas(train_df)
