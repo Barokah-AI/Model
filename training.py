@@ -73,3 +73,9 @@ optimizer = tf.keras.optimizers.Adam(learning_rate=3e-5)
 loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
 model.compile(optimizer=optimizer, loss=loss, metrics=['accuracy'])
 
+# Train model
+epochs = 1
+batch_size = 16
+
+history = model.fit(train_dataset.shuffle(100).batch(batch_size), epochs=epochs, batch_size=batch_size, validation_data=validation_dataset.batch(batch_size))
+
