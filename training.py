@@ -58,3 +58,6 @@ input_ids = tf.concat(input_ids, axis=0)
 attention_masks = tf.concat(attention_masks, axis=0)
 labels = tf.constant(df_cleaned['answer'].values)
 
+# Split data menjadi train dan test set
+train_inputs, validation_inputs, train_labels, validation_labels = train_test_split(input_ids, labels, test_size=0.1)
+
