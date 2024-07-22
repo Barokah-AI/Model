@@ -21,3 +21,5 @@ def get_answer(question):
     print(max(outputs.logits))
     print(answer)
     return label_dict[answer]
+    # return outputs
+    
