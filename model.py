@@ -20,3 +20,6 @@ def get_next_model_version(models_directory):
             number = int(match.group(1))
             max_version = max(max_version, number)
     return name_models + str(max_version + 1)
+
+# Verify CUDA availability and device
+print("CUDA available:", torch.cuda.is_available())
