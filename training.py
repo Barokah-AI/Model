@@ -14,3 +14,15 @@ stemmer = factory.create_stemmer()
 
 punct_re_escape = re.compile('[%s]' % re.escape('!"#$%&()*+,./:;<=>?@[\\]^_`{|}~'))
 
+def normalize_sentence(sentence):
+    sentence = punct_re_escape.sub('', sentence.lower())
+    sentence = ' '.join(sentence.split())
+    if sentence:
+        sentence = sentence.strip().split(" ")
+        normal_sentence = " "
+        for word in sentence:
+            root_sentence = stemmer.stem(word)
+            normal_sentence += root_sentence + " "
+        return punct_re_escape.sub('', normal_sentence.strip())
+    return sentence
+
