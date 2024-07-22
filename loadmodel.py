@@ -15,22 +15,22 @@ tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
 model = BertForSequenceClassification.from_pretrained("./models/model v"+str(version))
 
 
-def get_answer(question):
-    inputs = tokenizer(question, return_tensors="pt")
-    outputs = model(**inputs)
-    answer = torch.argmax(outputs.logits).item()
-    print(max(outputs.logits))
-    print(answer)
-    return label_dict[answer]
-    # return outputs
+# def get_answer(question):
+#     inputs = tokenizer(question, return_tensors="pt")
+#     outputs = model(**inputs)
+#     answer = torch.argmax(outputs.logits).item()
+#     print(max(outputs.logits))
+#     print(answer)
+#     return label_dict[answer]
+#     # return outputs
 
-# Test the model
-while True:
-    user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
-    if user_input.lower() == 'exit':
-        print("Terima kasih! Sampai jumpa!")
-        break
-    answer = get_answer(user_input)
-    print(f"Jawaban: {answer}")
+# # Test the model
+# while True:
+#     user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
+#     if user_input.lower() == 'exit':
+#         print("Terima kasih! Sampai jumpa!")
+#         break
+#     answer = get_answer(user_input)
+#     print(f"Jawaban: {answer}")
 
-# print(label_dict)
+# # print(label_dict)
