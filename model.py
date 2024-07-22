@@ -17,3 +17,5 @@ def get_next_model_version(models_directory):
     for item in contents:
         match = re.search(r'v(\d+)', item)
         if match:
+            number = int(match.group(1))
+            max_version = max(max_version, number)
