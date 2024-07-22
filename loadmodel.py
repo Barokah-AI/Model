@@ -32,5 +32,3 @@ while True:
         break
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
-
-# print(label_dict)
