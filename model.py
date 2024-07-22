@@ -29,4 +29,7 @@ if torch.cuda.is_available():
 else:
     print("CUDA not available. Check your CUDA installation and NVIDIA drivers.")
 
+# Load dataset
+df = pd.read_csv("dataset/barokah.csv", sep="|")
+
 
