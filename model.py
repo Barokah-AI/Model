@@ -105,3 +105,5 @@ def compute_metrics(eval_pred):
         logits = torch.tensor(logits)
     if isinstance(labels, np.ndarray):
         labels = torch.tensor(labels)
+    predictions = torch.argmax(logits, dim=-1)
+    return metric.compute(predictions=predictions, references=labels)
