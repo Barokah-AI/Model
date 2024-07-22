@@ -128,3 +128,5 @@ trainer.train()
 # Evaluate model
 eval_results = trainer.evaluate()
 
+# Print evaluation results, including accuracy
+print(f"Evaluation results: {eval_results}")
