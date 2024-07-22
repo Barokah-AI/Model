@@ -66,3 +66,5 @@ eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'l
 # Validate labels
 num_labels = len(df['label'].unique())
 for dataset in [train_dataset, eval_dataset]:
+     for example in dataset:
+        assert 0 <= example['label'] < num_labels, f"Invalid label {example['label']} found!"
