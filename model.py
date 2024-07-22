@@ -117,4 +117,7 @@ trainer = Trainer(
     compute_metrics=compute_metrics
 )
 
+# Print device to verify
+print("Training on device:", trainer.args.device)
+
 
