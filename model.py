@@ -56,4 +56,7 @@ def preprocess_function(examples):
     inputs['label'] = examples['label']
     return inputs
 
+train_dataset = train_dataset.map(preprocess_function, batched=True)
+eval_dataset = eval_dataset.map(preprocess_function, batched=True)
+
 
