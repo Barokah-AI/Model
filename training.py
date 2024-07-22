@@ -65,3 +65,6 @@ train_inputs, validation_inputs, train_labels, validation_labels = train_test_sp
 train_dataset = tf.data.Dataset.from_tensor_slices(({'input_ids': train_inputs, 'attention_mask': attention_masks[:len(train_inputs)]}, train_labels))
 validation_dataset = tf.data.Dataset.from_tensor_slices(({'input_ids': validation_inputs, 'attention_mask': attention_masks[len(train_inputs):]}, validation_labels))
 
+# Load model
+model = TFBertForSequenceClassification.from_pretrained('indobenchmark/indobert-base-p2', num_labels=2)
+
