@@ -120,4 +120,7 @@ trainer = Trainer(
 # Print device to verify
 print("Training on device:", trainer.args.device)
 
+# Train model
+trainer.train()
+
 
