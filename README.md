@@ -1,3 +1,3 @@
 # Model
-Model nya barokah 🚀✨
+Modelnya barokah 🚀✨
 Modelnya pake BERT
