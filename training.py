@@ -83,3 +83,16 @@ history = model.fit(train_dataset.shuffle(100).batch(batch_size), epochs=epochs,
 model.save_pretrained('./indobert_model')
 tokenizer.save_pretrained('./indobert_model')
 
+# Function to predict answer
+def predict_answer(question):
+    question = normalize_sentence(question)
+    inputs = tokenizer(question, return_tensors="tf", max_length=64, padding="max_length", truncation=True)
+    outputs = model(inputs)
+    logits = outputs.logits
+    predicted_label = tf.argmax(logits, axis=-1).numpy()
+    return predicted_label
+
+# Example usage of prediction function
+# example_question = "Apa itu BERT?"
+# predicted_answer = predict_answer(example_question)
+# print(f"Predicted label for the question '{example_question}' is: {predicted_answer}")
