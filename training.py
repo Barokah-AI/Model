@@ -26,3 +26,14 @@ def normalize_sentence(sentence):
         return punct_re_escape.sub('', normal_sentence.strip())
     return sentence
 
+# Clean and preprocess the dataset
+cleaned_data = []
+for index, row in df.iterrows():
+    question = normalize_sentence(str(row['question']))
+    answer = str(row['answer']).lower().replace('\n', ' ')
+
+    if len(question.split()) > 0:
+        cleaned_data.append({"question": question, "answer": answer})
+
+df_cleaned = pd.DataFrame(cleaned_data)
+
