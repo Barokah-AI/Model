@@ -18,6 +18,12 @@ class QADataset(torch.utils.data.Dataset):
         self.targets = targets
         self.tokenizer = tokenizer
         self.max_length = max_length
+        
+    def __init__(self, inputs, targets, tokenizer, max_length=64):
+        self.inputs = inputs
+        self.targets = targets
+        self.tokenizer = tokenizer
+        self.max_length = max_length
 
     def __len__(self):
         return len(self.inputs)
