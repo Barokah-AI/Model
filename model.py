@@ -19,7 +19,7 @@ def get_next_model_version(models_directory):
         if match:
             number = int(match.group(1))
             max_version = max(max_version, number)
-    return name_models + str(max_version + 1)
+        return name_models + str(max_version + 1) 
 
 # Verify CUDA availability and device
 print("CUDA available:", torch.cuda.is_available())
@@ -66,7 +66,7 @@ eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'l
 # Validate labels
 num_labels = len(df['label'].unique())
 for dataset in [train_dataset, eval_dataset]:
-    for example in dataset:
+     for example in dataset:
         assert 0 <= example['label'] < num_labels, f"Invalid label {example['label']} found!"
 
 # Training arguments
