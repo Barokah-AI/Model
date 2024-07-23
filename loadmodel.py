@@ -10,10 +10,8 @@ df = pd.read_csv("dataset/13002-14001.csv", sep="|")
 df['label'] = df['answer'].astype('category').cat.codes
 label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
-
 tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
 model = BertForSequenceClassification.from_pretrained("./models/model v"+str(version))
-
 
 def get_answer(question):
     inputs = tokenizer(question, return_tensors="pt")
@@ -24,11 +22,11 @@ def get_answer(question):
     return label_dict[answer]
     # return outputs
 
-# Test the model
-while True:
-    user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
-    if user_input.lower() == 'exit':
-        print("Terima kasih! Sampai jumpa!")
+    # Test the model
+    while True:
+        user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
+        if user_input.lower() == 'exit':
+              print("Terima kasih! Sampai jumpa!")
         break
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
