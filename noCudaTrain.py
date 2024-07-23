@@ -22,7 +22,7 @@ def get_next_model_version(models_directory):
     return name_models + str(max_version + 1)
 
 # Load dataset
-df = pd.read_csv("dataset/barokah-1.csv", sep="|")
+df = pd.read_csv("dataset/barokahcsv", sep="|")
 
 # Encode labels
 df['label'] = df['answer'].astype('category').cat.codes
@@ -45,6 +45,12 @@ def preprocess_function(examples):
     inputs['label'] = examples['label']
     return inputs
 
+# Tokenize dataset and include labels
+def preprocess_function(examples):
+    inputs = tokenizer(examples['question'], truncation=True, padding=True)
+    inputs['label'] = examples['label']
+    return inputs
+
 train_dataset = train_dataset.map(preprocess_function, batched=True)
 eval_dataset = eval_dataset.map(preprocess_function, batched=True)
 
@@ -57,6 +63,26 @@ num_labels = len(df['label'].unique())
 for dataset in [train_dataset, eval_dataset]:
     for example in dataset:
         assert 0 <= example['label'] < num_labels, f"Invalid label {example['label']} found!"
+
+# Training arguments
+training_args = TrainingArguments(
+    output_dir='./results',
+    num_train_epochs=100,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=32,
+    warmup_steps=600,
+    weight_decay=0.01,
+    logging_dir='./logs',
+    logging_steps=100,
+    evaluation_strategy="steps",
+    learning_rate=3e-5,
+    save_total_limit=5,
+    disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
+    load_best_model_at_end=True,
+    metric_for_best_model="eval_accuracy",
+    greater_is_better=True,
+    no_cuda=True  # Tidak menggunakan CUDA
+)
 
 # Training arguments
 training_args = TrainingArguments(
@@ -110,5 +136,5 @@ print(f"Evaluation results: {eval_results}")
 
 # Save model
 next_version = get_next_model_version(models_directory)
-model.save_pretrained("./models/" + next_version)
-tokenizer.save_pretrained("./models/" + next_version)
+model.save_pretrained("./Models/" + next_version)
+tokenizer.save_pretrained("./Models/" + next_version)
