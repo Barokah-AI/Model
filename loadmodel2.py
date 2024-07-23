@@ -9,4 +9,3 @@ inputs = tokenizer.encode("generate answer: " + question, return_tensors="pt", m
 outputs = model.generate(inputs, max_length=50, num_return_sequences=1, early_stopping=True)
 answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
 print("Answer:", answer)
-print("Jawab:", jawab)
