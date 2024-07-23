@@ -22,7 +22,7 @@ def get_next_model_version(models_directory):
     return name_models + str(max_version + 1)
 
 # Load dataset
-df = pd.read_csv("dataset/barokahcsv", sep="|")
+df = pd.read_csv("dataset/barokah.csv", sep="|")
 
 # Encode labels
 df['label'] = df['answer'].astype('category').cat.codes
