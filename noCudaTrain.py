@@ -31,3 +31,7 @@ label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
 # Split dataset
 train_df, eval_df = train_test_split(df, test_size=0.2)
+
+# Convert to Hugging Face Dataset
+train_dataset = Dataset.from_pandas(train_df)
+eval_dataset = Dataset.from_pandas(eval_df)
