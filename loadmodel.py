@@ -23,21 +23,12 @@ def get_answer(question):
     print(answer)
     return label_dict[answer]
     # return outputs
-    
-def get_answer(question):
-    inputs = tokenizer(question, return_tensors="pt")
-    outputs = model(**inputs)
-    answer = torch.argmax(outputs.logits).item()
-    print(max(outputs.logits))
-    print(answer)
-    return label_dict[answer]
-    # return outputs
 
 # Test the model
 while True:
-    user_input = input("Tanyakan sesuatu atau ketik 'exit' untuk keluar: ")
+    user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
     if user_input.lower() == 'exit':
-        print("Terima kasih dan Sampai jumpa!")
+        print("Terima kasih! Sampai jumpa!")
         break
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
