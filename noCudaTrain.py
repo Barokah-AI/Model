@@ -98,3 +98,6 @@ trainer = Trainer(
     eval_dataset=eval_dataset,
     compute_metrics=compute_metrics
 )
+
+# Train model
+trainer.train()
