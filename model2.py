@@ -1,62 +1,46 @@
+import tensorflow as tf
+from transformers import TFBertForSequenceClassification, BertTokenizer
 import pandas as pd
-from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments
-import torch
 
-# Load the dataset
-df = pd.read_csv('dataset/questions.csv', delimiter='|', names=['question', 'answer'])
+# Initialize an empty list to store cleaned rows
+rows = []
+
+# Read and clean the dataset, handling any anomalies
+with open('dataset_clean.csv', 'r', encoding='utf-8') as file:
+    for line_number, line in enumerate(file):
+        # Split line by '|' and handle any unexpected lines
+        parts = line.strip().split('|')
+        if len(parts) == 2:  # Only process lines with exactly two parts
+            rows.append(parts)
+
+# Convert cleaned rows to a DataFrame
+df = pd.DataFrame(rows, columns=['question', 'answer'])
+
+# Convert 'answer' column to integers
+df['answer'] = pd.to_numeric(df['answer'], errors='coerce').fillna(0).astype(int)
 
 # Prepare the dataset
-tokenizer = T5Tokenizer.from_pretrained('t5-small')
+tokenizer = BertTokenizer.from_pretrained('indobenchmark/indobert-base-p2')
+input_ids = []
+attention_masks = []
 
-# Combine question and answer into a single string for training
-inputs = "generate answer: " + df['question'] + " </s>"
-targets = df['answer'] + " </s>"
+for question in df['question']:
+    encoded = tokenizer.encode_plus(question, add_special_tokens=True, max_length=64, padding='max_length', return_attention_mask=True, truncation=True)
+    input_ids.append(encoded['input_ids'])
+    attention_masks.append(encoded['attention_mask'])
 
-class QADataset(torch.utils.data.Dataset):
-    def __init__(self, inputs, targets, tokenizer, max_length=64):
-        self.inputs = inputs
-        self.targets = targets
-        self.tokenizer = tokenizer
-        self.max_length = max_length
-
-    def __len__(self):
-        return len(self.inputs)
-
-    def __getitem__(self, idx):
-        input_encodings = self.tokenizer(self.inputs[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
-        target_encodings = self.tokenizer(self.targets[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
-
-        input_ids = input_encodings['input_ids'].squeeze()
-        attention_mask = input_encodings['attention_mask'].squeeze()
-        labels = target_encodings['input_ids'].squeeze()
-        
-        return {'input_ids': input_ids, 'attention_mask': attention_mask, 'labels': labels}
-
-dataset = QADataset(inputs.tolist(), targets.tolist(), tokenizer)
+input_ids = tf.constant(input_ids)
+attention_masks = tf.constant(attention_masks)
+labels = tf.constant(df['answer'].values)
 
 # Load model
-model = T5ForConditionalGeneration.from_pretrained('t5-small')
+model = TFBertForSequenceClassification.from_pretrained('indobenchmark/indobert-base-p2', num_labels=len(df['answer'].unique()))
 
-# Define training arguments
-training_args = TrainingArguments(
-    output_dir='./results',         
-    num_train_epochs=3,              
-    per_device_train_batch_size=2,  
-    warmup_steps=500,                
-    weight_decay=0.01,               
-    logging_dir='./logs',            
-)
+# Compile and train the model
+model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
+model.fit([input_ids, attention_masks], labels, epochs=3, batch_size=32)
 
-# Create Trainer
-trainer = Trainer(
-    model=model,                         
-    args=training_args,                  
-    train_dataset=dataset,         
-)
-
-# Train the model
-trainer.train()
-
-# Save the model
-model.save_pretrained('t5_qa_model')
-tokenizer.save_pretrained('t5_qa_model')
+# Save the model and tokenizer
+model_path = 'indobert_model'
+model.save_pretrained(model_path)
+tokenizer.save_pretrained(model_path)
