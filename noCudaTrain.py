@@ -77,3 +77,6 @@ training_args = TrainingArguments(
     greater_is_better=True,
     no_cuda=True  # Tidak menggunakan CUDA
 )
+
+# Define accuracy metric
+metric = evaluate.load("accuracy", trust_remote_code=True)
