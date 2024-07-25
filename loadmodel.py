@@ -29,10 +29,6 @@ def get_answer(question):
     output = model(**input_s)
     # Ambil label dengan nilai tertinggi
     answer = torch.argmax(output.logits).item()
-    # print(output.logits)
-    print(max(output.logits))
-    # print(output)
-    print(answer)
     return label_dict[answer]
 
 while True:
