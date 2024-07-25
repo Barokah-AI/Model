@@ -25,6 +25,7 @@ def get_answer(question):
     input_s = tokenizer(question, return_tensors="pt")
     # Prediksi jawaban
     input_s = question
+    # Prediksi jawaban dari pertanyaan
     output = model(**input_s)
     answer = torch.argmax(output.logits).item()
     print(max(output.logits))
