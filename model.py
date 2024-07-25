@@ -72,7 +72,7 @@ for dataset in [train_dataset, eval_dataset]:
 # Training arguments
 training_args = TrainingArguments(
     output_dir='./results',
-    num_train_epochs=10,
+    num_train_epochs=20,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=32,
     warmup_steps=2000,
