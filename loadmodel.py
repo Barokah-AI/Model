@@ -11,17 +11,17 @@ df['label'] = df['answer'].astype('category').cat.codes
 label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
 
-# tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
+tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
 model = BertForSequenceClassification.from_pretrained("./models/model v"+str(version))
 
 
 def get_answer(question):
-    # inputs = tokenizer(question, return_tensors="pt")
+    inputs = tokenizer(question, return_tensors="pt")
     inputs = question
     outputs = model(**inputs)
     answer = torch.argmax(outputs.logits).item()
-    # print(max(outputs.logits))
-    # print(answer)
+    print(max(outputs.logits))
+    print(answer)
     return label_dict[answer]
     # return outputs
 
@@ -34,4 +34,4 @@ while True:
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
 
-# print(label_dict)
+print(label_dict)
