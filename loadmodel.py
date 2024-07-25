@@ -41,5 +41,6 @@ while True:
         print("Terima kasih! Sampai jumpa!")
         # Keluar dari loop
         break
+    # Dapatkan jawaban
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
