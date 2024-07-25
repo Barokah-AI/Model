@@ -111,7 +111,7 @@ metric = evaluate.load("accuracy", trust_remote_code=True)
 def compute_metrics(eval_pred):
   logits, labels = eval_pred
   if isinstance(logits, np.ndarray):
-      logits = torch.tensor(logits)
+    logits = torch.tensor(logits)
   if isinstance(labels, np.ndarray):
       labels = torch.tensor(labels)
   predictions = torch.argmax(logits, dim=-1)
