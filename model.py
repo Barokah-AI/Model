@@ -79,22 +79,22 @@ for dataset in [train_dataset, eval_dataset]:
 
 # Training arguments
 training_args = TrainingArguments(
-    output_dir='./results',
-    num_train_epochs=20,
-    per_device_train_batch_size=16,
-    per_device_eval_batch_size=32,
-    warmup_steps=2000,
-    weight_decay=0.01,
-    logging_dir='./logs',
-    logging_steps=500,
-    evaluation_strategy="steps",
-    learning_rate=3e-5,
-    save_total_limit=5,
-    disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
-    load_best_model_at_end=True,
-    metric_for_best_model="eval_accuracy",
-    greater_is_better=True,
-    no_cuda=not torch.cuda.is_available()  # Ini akan menggunakan GPU jika tersedia
+  output_dir='./results',
+  num_train_epochs=20,
+  per_device_train_batch_size=16,
+  per_device_eval_batch_size=32,
+  warmup_steps=2000,
+  weight_decay=0.01,
+  logging_dir='./logs',
+  logging_steps=500,
+  evaluation_strategy="steps",
+  learning_rate=3e-5,
+  save_total_limit=5,
+  disable_tqdm=False,  # Set to True if you don't want to use tqdm progress bars
+  load_best_model_at_end=True,
+  metric_for_best_model="eval_accuracy",
+  greater_is_better=True,
+  no_cuda=not torch.cuda.is_available()  # Ini akan menggunakan GPU jika tersedia
 )
 
 # Explicitly move model to GPU
