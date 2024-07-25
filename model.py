@@ -50,7 +50,7 @@ eval_dataset = Dataset.from_pandas(eval_df)
 # Load tokenizer and model
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertForSequenceClassification.from_pretrained(
-    'bert-base-uncased', num_labels=len(df['label'].unique()))
+  'bert-base-uncased', num_labels=len(df['label'].unique()))
 
 # Tokenize dataset and include labels
 
