@@ -27,7 +27,7 @@ class QADataset(torch.utils.data.Dataset):
     input_encodings = self.tokenizer(
       self.inputs[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
     target_encodings = self.tokenizer(
-        self.targets[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
+      self.targets[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
 
     input_ids = input_encodings['input_ids'].squeeze()
     attention_mask = input_encodings['attention_mask'].squeeze()
