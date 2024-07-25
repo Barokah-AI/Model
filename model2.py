@@ -3,8 +3,7 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, Train
 import torch
 
 # Load the dataset
-df = pd.read_csv('dataset/questions.csv', delimiter='|',
-                 names=['question', 'answer'])
+df = pd.read_csv('dataset/questions.csv', delimiter='|', names=['question', 'answer'])
 
 # Prepare the dataset
 tokenizer = T5Tokenizer.from_pretrained('t5-small')
@@ -15,26 +14,26 @@ targets = df['answer'] + " </s>"
 
 
 class QADataset(torch.utils.data.Dataset):
-    def __init__(self, inputs, targets, tokenizer, max_length=64):
-        self.inputs = inputs
-        self.targets = targets
-        self.tokenizer = tokenizer
-        self.max_length = max_length
+  def __init__(self, inputs, targets, tokenizer, max_length=64):
+      self.inputs = inputs
+      self.targets = targets
+      self.tokenizer = tokenizer
+      self.max_length = max_length
 
-    def __len__(self):
-        return len(self.inputs)
+  def __len__(self):
+      return len(self.inputs)
 
-    def __getitem__(self, idx):
-        input_encodings = self.tokenizer(
-            self.inputs[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
-        target_encodings = self.tokenizer(
-            self.targets[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
+  def __getitem__(self, idx):
+      input_encodings = self.tokenizer(
+          self.inputs[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
+      target_encodings = self.tokenizer(
+          self.targets[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
 
-        input_ids = input_encodings['input_ids'].squeeze()
-        attention_mask = input_encodings['attention_mask'].squeeze()
-        labels = target_encodings['input_ids'].squeeze()
+      input_ids = input_encodings['input_ids'].squeeze()
+      attention_mask = input_encodings['attention_mask'].squeeze()
+      labels = target_encodings['input_ids'].squeeze()
 
-        return {'input_ids': input_ids, 'attention_mask': attention_mask, 'labels': labels}
+      return {'input_ids': input_ids, 'attention_mask': attention_mask, 'labels': labels}
 
 
 dataset = QADataset(inputs.tolist(), targets.tolist(), tokenizer)
