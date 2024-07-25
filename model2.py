@@ -36,4 +36,7 @@ class QADataset(torch.utils.data.Dataset):
   
 dataset = QADataset(inputs.tolist(), targets.tolist(), tokenizer)
 
+# Load model
+model = T5ForConditionalGeneration.from_pretrained('t5-small')
+
   
