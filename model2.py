@@ -55,6 +55,9 @@ trainer = Trainer(
   args=training_args,
   train_dataset=dataset,
 )
+
+# Train the model
+trainer.train()
  
  
 
