@@ -16,12 +16,12 @@ model = BertForSequenceClassification.from_pretrained("./models/model v"+str(ver
 def get_answer(question):
     input_s = tokenizer(question, return_tensors="pt")
     input_s = question
-    outputs = model(**input_s)
-    answer = torch.argmax(outputs.logits).item()
-    print(max(outputs.logits))
+    output = model(**input_s)
+    answer = torch.argmax(output.logits).item()
+    print(max(output.logits))
     print(answer)
     return label_dict[answer]
-    # return outputs
+    # return output
 
 while True:
     user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
