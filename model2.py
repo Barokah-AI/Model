@@ -43,12 +43,12 @@ model = T5ForConditionalGeneration.from_pretrained('t5-small')
 
 # Define training arguments
 training_args = TrainingArguments(
-    output_dir='./results',
-    num_train_epochs=3,
-    per_device_train_batch_size=2,
-    warmup_steps=500,
-    weight_decay=0.01,
-    logging_dir='./logs',
+  output_dir='./results',
+  num_train_epochs=3,
+  per_device_train_batch_size=2,
+  warmup_steps=500,
+  weight_decay=0.01,
+  logging_dir='./logs',
 )
 
 # Create Trainer
