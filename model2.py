@@ -12,7 +12,6 @@ tokenizer = T5Tokenizer.from_pretrained('t5-small')
 inputs = "generate answer: " + df['question'] + " </s>"
 targets = df['answer'] + " </s>"
 
-
 class QADataset(torch.utils.data.Dataset):
   def __init__(self, inputs, targets, tokenizer, max_length=64):
     self.inputs = inputs
@@ -34,7 +33,6 @@ class QADataset(torch.utils.data.Dataset):
     labels = target_encodings['input_ids'].squeeze()
 
     return {'input_ids': input_ids, 'attention_mask': attention_mask, 'labels': labels}
-
 
 dataset = QADataset(inputs.tolist(), targets.tolist(), tokenizer)
 
