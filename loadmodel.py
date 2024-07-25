@@ -7,8 +7,10 @@ version = 12
 # Load dataset
 df = pd.read_csv("dataset/barokah.csv", sep="|")
 
-# Encode labels dan buat dictionary
+# Encode labels
 df['label'] = df['answer'].astype('category').cat.codes
+
+# Buat dictionary dari label
 label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
 tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
