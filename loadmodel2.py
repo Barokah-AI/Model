@@ -1,5 +1,6 @@
 # Load model T5 yang sudah di-training sebelumnya dan gunakan untuk menghasilkan jawaban dari pertanyaan yang diberikan
 from transformers import T5Tokenizer, T5ForConditionalGeneration
+# transformers adalah library yang menyediakan berbagai model NLP yang sudah di-training sebelumnya
 
 # Load model dan tokenizer dari direktori tempat Anda menyimpannya
 model_path = 't5_qa_model'
