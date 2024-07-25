@@ -14,5 +14,6 @@ question = "Dimana kita bisa makan siang?"
 inputs = tokenizer.encode("generate answer: " + question, return_tensors="pt", max_length=64, truncation=True)
 # Prediksi jawaban
 outputs = model.generate(inputs, max_length=50, num_return_sequences=1, early_stopping=True)
+# Decode jawaban
 answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
 print("Answer:", answer)
