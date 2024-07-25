@@ -35,6 +35,7 @@ def get_answer(question):
 while True:
     # Input pertanyaan
     user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
+    # Keluar
     if user_input.lower() == 'exit':
         print("Terima kasih! Sampai jumpa!")
         break
