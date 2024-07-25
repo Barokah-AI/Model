@@ -16,4 +16,5 @@ inputs = tokenizer.encode("generate answer: " + question, return_tensors="pt", m
 outputs = model.generate(inputs, max_length=50, num_return_sequences=1, early_stopping=True)
 # Decode jawaban
 answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
+# Print jawaban
 print("Answer:", answer)
