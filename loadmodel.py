@@ -21,6 +21,7 @@ model = BertForSequenceClassification.from_pretrained("./models/model v"+str(ver
 
 # Fungsi untuk mendapatkan jawaban dari pertanyaan
 def get_answer(question):
+    # Tokenisasi pertanyaan
     input_s = tokenizer(question, return_tensors="pt")
     input_s = question
     output = model(**input_s)
