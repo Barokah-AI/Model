@@ -15,10 +15,10 @@ def get_next_model_version(models_directory):
   contents = os.listdir(models_directory)
   max_version = 0
   for item in contents:
-      match = re.search(r'v(\d+)', item)
-      if match:
-          number = int(match.group(1))
-          max_version = max(max_version, number)
+    match = re.search(r'v(\d+)', item)
+    if match:
+        number = int(match.group(1))
+        max_version = max(max_version, number)
   return name_models + str(max_version + 1)
 
 
