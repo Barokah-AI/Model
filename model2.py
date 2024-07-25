@@ -31,4 +31,7 @@ class QADataset(torch.utils.data.Dataset):
     input_ids = input_encodings['input_ids'].squeeze()
     attention_mask = input_encodings['attention_mask'].squeeze()
     labels = target_encodings['input_ids'].squeeze()
+
+    return {'input_ids': input_ids, 'attention_mask': attention_mask, 'labels': labels}
+
   
