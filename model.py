@@ -73,9 +73,9 @@ for dataset in [train_dataset, eval_dataset]:
 training_args = TrainingArguments(
     output_dir='./results',
     num_train_epochs=10,
-    per_device_train_batch_size=16,
-    per_device_eval_batch_size=32,
-    warmup_steps=2000,
+    per_device_train_batch_size=8,
+    per_device_eval_batch_size=16,
+    warmup_steps=1000,
     weight_decay=0.01,
     logging_dir='./logs',
     logging_steps=500,
