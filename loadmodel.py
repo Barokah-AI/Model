@@ -4,7 +4,7 @@ import pandas as pd
 
 #pilih versi model yang akan digunakan
 version = 12
-
+# Load dataset
 df = pd.read_csv("dataset/barokah.csv", sep="|")
 
 # Encode labels
