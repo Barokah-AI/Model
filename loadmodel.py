@@ -14,9 +14,9 @@ tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
 model = BertForSequenceClassification.from_pretrained("./models/model v"+str(version))
 
 def get_answer(question):
-    inputs = tokenizer(question, return_tensors="pt")
-    inputs = question
-    outputs = model(**inputs)
+    input_s = tokenizer(question, return_tensors="pt")
+    input_s = question
+    outputs = model(**input_s)
     answer = torch.argmax(outputs.logits).item()
     print(max(outputs.logits))
     print(answer)
