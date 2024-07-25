@@ -58,6 +58,10 @@ trainer = Trainer(
 
 # Train the model
 trainer.train()
+
+# Save the model
+model.save_pretrained('t5_qa_model')
+tokenizer.save_pretrained('t5_qa_model')
  
  
 
