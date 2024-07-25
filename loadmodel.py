@@ -15,6 +15,8 @@ label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
 # Load tokenizer
 tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
+
+# Load model
 model = BertForSequenceClassification.from_pretrained("./models/model v"+str(version))
 
 def get_answer(question):
