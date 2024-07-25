@@ -1,3 +1,4 @@
+# Load model T5 yang sudah di-training sebelumnya dan gunakan untuk menghasilkan jawaban dari pertanyaan yang diberikan
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 # Load model dan tokenizer dari direktori tempat Anda menyimpannya
