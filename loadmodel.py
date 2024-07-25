@@ -2,7 +2,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 import pandas as pd
 
-version = 10
+version = 12
 
 df = pd.read_csv("dataset/barokah.csv", sep="|")
 
