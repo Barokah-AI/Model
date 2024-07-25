@@ -21,7 +21,6 @@ def get_answer(question):
     print(max(output.logits))
     print(answer)
     return label_dict[answer]
-    # return output
 
 while True:
     user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
@@ -30,5 +29,3 @@ while True:
         break
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
-
-# print(label_dict)
