@@ -26,9 +26,9 @@ def get_next_model_version(models_directory):
 print("CUDA available:", torch.cuda.is_available())
 print("Number of GPUs:", torch.cuda.device_count())
 if torch.cuda.is_available():
-    print("CUDA device name:", torch.cuda.get_device_name(0))
+  print("CUDA device name:", torch.cuda.get_device_name(0))
 else:
-    print("CUDA not available. Check your CUDA installation and NVIDIA drivers.")
+  print("CUDA not available. Check your CUDA installation and NVIDIA drivers.")
 
 # Load dataset
 df = pd.read_csv("dataset/barokah-1.csv", sep="|")
