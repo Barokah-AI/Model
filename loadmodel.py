@@ -23,6 +23,7 @@ model = BertForSequenceClassification.from_pretrained("./models/model v"+str(ver
 def get_answer(question):
     # Tokenisasi pertanyaan
     input_s = tokenizer(question, return_tensors="pt")
+    # Prediksi jawaban
     input_s = question
     output = model(**input_s)
     answer = torch.argmax(output.logits).item()
