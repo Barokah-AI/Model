@@ -34,4 +34,4 @@ while True:
     answer = get_answer(user_input)
     print(f"Jawaban: {answer}")
 
-print(label_dict)
+# print(label_dict)
