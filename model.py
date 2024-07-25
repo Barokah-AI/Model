@@ -11,6 +11,7 @@ import numpy as np
 models_directory = "./models"
 name_models = "model v"
 
+
 def get_next_model_version(models_directory):
     contents = os.listdir(models_directory)
     max_version = 0
@@ -20,6 +21,7 @@ def get_next_model_version(models_directory):
             number = int(match.group(1))
             max_version = max(max_version, number)
     return name_models + str(max_version + 1)
+
 
 # Verify CUDA availability and device
 print("CUDA available:", torch.cuda.is_available())
@@ -48,20 +50,27 @@ eval_dataset = Dataset.from_pandas(eval_df)
 
 # Load tokenizer and model
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=len(df['label'].unique()))
+model = BertForSequenceClassification.from_pretrained(
+    'bert-base-uncased', num_labels=len(df['label'].unique()))
 
 # Tokenize dataset and include labels
+
+
 def preprocess_function(examples):
-    inputs = tokenizer(examples['question'], truncation=True, padding='max_length', max_length=128)
+    inputs = tokenizer(
+        examples['question'], truncation=True, padding='max_length', max_length=128)
     inputs['label'] = examples['label']
     return inputs
+
 
 train_dataset = train_dataset.map(preprocess_function, batched=True)
 eval_dataset = eval_dataset.map(preprocess_function, batched=True)
 
 # Set format for PyTorch
-train_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
-eval_dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'label'])
+train_dataset.set_format(type='torch', columns=[
+                         'input_ids', 'attention_mask', 'label'])
+eval_dataset.set_format(type='torch', columns=[
+                        'input_ids', 'attention_mask', 'label'])
 
 # Validate labels
 num_labels = len(df['label'].unique())
@@ -99,6 +108,7 @@ else:
 # Define accuracy metric
 metric = evaluate.load("accuracy", trust_remote_code=True)
 
+
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
     if isinstance(logits, np.ndarray):
@@ -107,6 +117,7 @@ def compute_metrics(eval_pred):
         labels = torch.tensor(labels)
     predictions = torch.argmax(logits, dim=-1)
     return metric.compute(predictions=predictions, references=labels)
+
 
 # Trainer
 trainer = Trainer(
@@ -131,5 +142,5 @@ print(f"Evaluation results: {eval_results}")
 
 # Save model
 next_version = get_next_model_version(models_directory)
-model.save_pretrained("./models/" + next_version )
-tokenizer.save_pretrained("./models/" + next_version )
+model.save_pretrained("./models/" + next_version)
+tokenizer.save_pretrained("./models/" + next_version)
