@@ -57,7 +57,7 @@ model = BertForSequenceClassification.from_pretrained(
 
 def preprocess_function(examples):
   inputs = tokenizer(
-      examples['question'], truncation=True, padding='max_length', max_length=128)
+    examples['question'], truncation=True, padding='max_length', max_length=128)
   inputs['label'] = examples['label']
   return inputs
 
