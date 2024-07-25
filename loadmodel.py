@@ -7,7 +7,7 @@ version = 12
 # Load dataset
 df = pd.read_csv("dataset/barokah.csv", sep="|")
 
-# Encode labels
+# Encode labels dan buat dictionary
 df['label'] = df['answer'].astype('category').cat.codes
 label_dict = dict(enumerate(df['answer'].astype('category').cat.categories))
 
