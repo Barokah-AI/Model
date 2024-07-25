@@ -24,16 +24,16 @@ class QADataset(torch.utils.data.Dataset):
     return len(self.inputs)
 
   def __getitem__(self, idx):
-      input_encodings = self.tokenizer(
-          self.inputs[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
-      target_encodings = self.tokenizer(
-          self.targets[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
+    input_encodings = self.tokenizer(
+        self.inputs[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
+    target_encodings = self.tokenizer(
+        self.targets[idx], truncation=True, padding='max_length', max_length=self.max_length, return_tensors="pt")
 
-      input_ids = input_encodings['input_ids'].squeeze()
-      attention_mask = input_encodings['attention_mask'].squeeze()
-      labels = target_encodings['input_ids'].squeeze()
+    input_ids = input_encodings['input_ids'].squeeze()
+    attention_mask = input_encodings['attention_mask'].squeeze()
+    labels = target_encodings['input_ids'].squeeze()
 
-      return {'input_ids': input_ids, 'attention_mask': attention_mask, 'labels': labels}
+    return {'input_ids': input_ids, 'attention_mask': attention_mask, 'labels': labels}
 
 
 dataset = QADataset(inputs.tolist(), targets.tolist(), tokenizer)
