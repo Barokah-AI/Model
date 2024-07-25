@@ -19,6 +19,7 @@ tokenizer = BertTokenizer.from_pretrained("./models/model v"+str(version))
 # Load model
 model = BertForSequenceClassification.from_pretrained("./models/model v"+str(version))
 
+# Fungsi untuk mendapatkan jawaban dari pertanyaan
 def get_answer(question):
     input_s = tokenizer(question, return_tensors="pt")
     input_s = question
