@@ -39,4 +39,11 @@ dataset = QADataset(inputs.tolist(), targets.tolist(), tokenizer)
 # Load model
 model = T5ForConditionalGeneration.from_pretrained('t5-small')
 
+# Define training arguments
+training_args = TrainingArguments(
+  output_dir='./results',
+  num_train_epochs=3,
+ 
+
+
   
