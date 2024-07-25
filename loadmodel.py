@@ -31,6 +31,7 @@ def get_answer(question):
     answer = torch.argmax(output.logits).item()
     return label_dict[answer]
 
+# Loop untuk bertanya
 while True:
     user_input = input("Tanyakan sesuatu (atau ketik 'exit' untuk keluar): ")
     if user_input.lower() == 'exit':
